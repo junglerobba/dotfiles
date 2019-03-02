@@ -1,0 +1,13 @@
+font=roboto 11
+background-color=#222222
+text-color=#fafafa
+border-color=#252525
+
+output=
+layer=overlay
+default-timeout=5000
+group-by=app-name,app-icon
+
+height=400
+margin=10,0
+padding=7
