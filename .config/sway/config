@@ -188,10 +188,8 @@ client.focused #333333 #222222 #ffffff #292d2e #222222
 
 bindsym $mod+r mode "resize"
 
-bindsym Print exec grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name') $(xdg-user-dir PICTURES)/$(date +'%Y-%m-%d-%H%M%S_grim.png')
-bindsym Ctrl+Print exec grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name') - | wl-copy
-bindsym Shift+Print exec grim -g "$(slurp)" $(xdg-user-dir PICTURES)/$(date +'%Y-%m-%d-%H%M%S_grim.png')
-bindsym Ctrl+Shift+Print exec grim -g "$(slurp)" - | wl-copy
+bindsym Shift+Print exec grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name') - | wl-copy
+bindsym Print exec grim -g "$(slurp)" - | wl-copy
 
 bindsym --locked XF86AudioLowerVolume exec --no-startup-id playerctl play-pause
 bindsym --locked XF86AudioRaiseVolume exec --no-startup-id playerctl next
