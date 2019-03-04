@@ -149,7 +149,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
 
 #bindsym $mod+Shift+l exec i3lock -c 101010 && sleep 1 && xset s activate
-bindsym $mod+Shift+l exec screenlock.sh
+bindsym $mod+Shift+l exec screenlock
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
