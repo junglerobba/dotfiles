@@ -6,7 +6,6 @@ border-color=#252525
 output=
 layer=overlay
 default-timeout=5000
-group-by=app-name,app-icon
 
 height=400
 margin=10,0
