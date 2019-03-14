@@ -220,6 +220,7 @@ bar {
 # ## Steam
 # # https://github.com/ValveSoftware/steam-for-linux/issues/1040
 for_window [class="^Steam$"] floating enable
+for_window [class="steam"] fullscreen enable
 # for_window [class="^Steam$" title="^Friends List*$"] floating enable
 # for_window [class="^Steam$" title="^Steam$"] floating enable
 # for_window [class="^Steam$" title="Steam - News"] floating enable
