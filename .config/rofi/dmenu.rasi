@@ -13,9 +13,9 @@
     sidebar-mode: false;
 }
 * {
-    background-color:      #1a1a1a;
-    border-color:          #fafafa;
-    text-color:           #fafafa;
+    background-color:      #000000;
+    border-color:          #000000;
+    text-color:           #eeeeec;
     font:            "Roboto 10";
 }
 
