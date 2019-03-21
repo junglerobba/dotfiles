@@ -203,7 +203,7 @@ bar {
   status_command  i3status | ~/.config/i3status/i3spotifystatus/pystatus.py
   position top
   separator_symbol " "
-  tray_padding 5
+  tray_padding 4
   colors {
     statusline #eeeeec
     background #000000
