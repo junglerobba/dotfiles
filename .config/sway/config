@@ -184,7 +184,7 @@ title_align center
 gaps inner 5
 smart_gaps on
 
-client.focused #000000 #000000 #eeeeec #000000 #000000
+client.focused #333333 #222222 #ffffff #292d2e #222222
 
 bindsym $mod+r mode "resize"
 
@@ -205,11 +205,11 @@ bar {
   separator_symbol " "
   tray_padding 4
   colors {
-    statusline #eeeeec
-    background #000000
-    focused_workspace #000000 #000000 #00afff
-    active_workspace #000000 #000000 #eeeeec
-    inactive_workspace #000000 #000000 #afafaf
+    statusline #fafafa
+    background #1a1a1a
+    focused_workspace #1a1a1a #1a1a1a #00afff
+    active_workspace #1a1a1a #1a1a1a #ffffff
+    inactive_workspace #1a1a1a #1a1a1a #afafaf
   }
 }
 
