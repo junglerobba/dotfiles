@@ -195,6 +195,7 @@ bindsym --locked XF86AudioLowerVolume exec --no-startup-id playerctl play-pause
 bindsym --locked XF86AudioRaiseVolume exec --no-startup-id playerctl next
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
 
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 exec --no-startup-id mako
 
 # Start i3bar to display a workspace bar (plus the system information i3status
