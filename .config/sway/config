@@ -240,3 +240,5 @@ assign [class="discord"] $ws10
 for_window [class="Spotify"] move to workspace $ws9
 workspace $ws10 output DP-2
 workspace $ws9 output DP-2
+
+for_window [title="Calculator"] floating enable

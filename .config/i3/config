@@ -239,3 +239,5 @@ workspace $ws10 output DisplayPort-1
 
 for_window [class="Spotify"] move to workspace $ws9
 workspace $ws9 output DisplayPort-1
+
+for_window [title="Calculator"] floating enable
