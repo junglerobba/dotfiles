@@ -14,3 +14,5 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+export EDITOR=/usr/bin/vim
