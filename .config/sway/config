@@ -201,17 +201,7 @@ exec --no-startup-id mako
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-  status_command  i3status | i3spotifystatus
-  position top
-  separator_symbol " "
-  tray_padding 4
-  colors {
-    statusline #fafafa
-    background #1a1a1a
-    focused_workspace #1a1a1a #1a1a1a #00afff
-    active_workspace #1a1a1a #1a1a1a #ffffff
-    inactive_workspace #1a1a1a #1a1a1a #afafaf
-  }
+  swaybar_command waybar
 }
 
 input * {
