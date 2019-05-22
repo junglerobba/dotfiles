@@ -2,7 +2,7 @@
     border: none;
     border-radius: 0;
     font-family: Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     min-height: 0;
 }
 
@@ -19,6 +19,10 @@ window#waybar {
     color: #fafafa;
 }
 
+#workspaces button:hover {
+    background-color: #999999;
+}
+
 #workspaces button.focused {
     color: #00afff;
 }
@@ -29,7 +33,11 @@ window#waybar {
 
 #workspaces button.urgent {
     background-color: #eb4d4b;
-    color: #1a1a1a;
+    color: #ffffff;
+}
+
+#workspaces button.urgent:hover {
+    color: #eb4d4b;
 }
 
 #clock, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #custom-media, #tray, #mode, #idle_inhibitor {
@@ -38,25 +46,13 @@ window#waybar {
 }
 
 #pulseaudio.muted {
-    color: #dddd00;
+    color: #ffff00;
 }
 
 #mode {
-    color: #ff4d4b;
-}
-
-@keyframes blink {
-    to {
-        background-color: #ffffff;
-        color: #000000;
-    }
-}
-
-label:focus {
-    background-color: #000000;
+    color: #eb4d4b;
 }
 
 .spotify {
     color: #9ec600;
 }
-
