@@ -196,6 +196,7 @@ bindsym --locked XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT
 
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 exec --no-startup-id mako
+exec --no-startup-id redshift -l 51:10
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
