@@ -10,6 +10,7 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
+set $term alacritty
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -30,7 +31,7 @@ font pango:roboto 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id gnome-terminal
+bindsym $mod+Return exec --no-startup-id $term
 
 bindsym $mod+n exec --no-startup-id nautilus
 

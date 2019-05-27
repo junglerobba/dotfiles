@@ -30,7 +30,7 @@ font pango:roboto 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id gnome-terminal
+bindsym $mod+Return exec --no-startup-id alacritty
 bindsym $mod+n exec --no-startup-id nautilus
 
 # kill focused window
