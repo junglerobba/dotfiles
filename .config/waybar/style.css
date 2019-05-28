@@ -16,19 +16,19 @@ window#waybar {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button {
     padding: 3px 3px;
-    color: #fafafa;
+    color: #afafaf;
 }
 
 #workspaces button:hover {
     background-color: #999999;
 }
 
-#workspaces button.focused {
-    color: #00afff;
+#workspaces button.visible {
+    color: #ffffff;
 }
 
-#workspaces button.active{
-    color: #afafaf;
+#workspaces button.focused {
+    color: #00afff;
 }
 
 #workspaces button.urgent {
