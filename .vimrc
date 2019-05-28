@@ -22,3 +22,11 @@ source $VIMRUNTIME/defaults.vim
 
 set number
 set wrap
+set tabstop=4
+set shiftwidth=4
+set autoindent
+syntax on
+
+set incsearch
+set showmatch
+set hlsearch
