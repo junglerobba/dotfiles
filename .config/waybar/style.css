@@ -6,13 +6,11 @@
     min-height: 0;
 }
 
-window#waybar {
+window {
     background: #1a1a1a;
     color: #fafafa;
-    transition-property: background, background-color;
-    transition-duration: .5s;
 }
-
+	
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button {
     padding: 3px 3px;
@@ -38,6 +36,11 @@ window#waybar {
 
 #workspaces button.urgent:hover {
     color: #eb4d4b;
+}
+
+#window {
+	font-family: Source Code Pro;
+	padding: 3px 15px;
 }
 
 #clock, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #custom-media, #tray, #mode, #idle_inhibitor {
