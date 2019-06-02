@@ -1,10 +1,10 @@
 {
-    "modules-left": ["sway/workspaces", "sway/window", "sway/mode"],
+    "modules-left": ["sway/workspaces", "sway/mode"],
     "modules-center": [],
     "modules-right": ["custom/spotify", "tray", "pulseaudio", "clock"],
     "clock": {
-		"interval": 1,
-		"format": "{:%a  %Y/%m/%d  %H:%M:%S}"
+	"interval": 1,
+	"format": "{:%a  %Y/%m/%d  %H:%M:%S}"
     },
 	"pulseaudio": {
 	    "format": "{icon}",
@@ -28,18 +28,13 @@
 	"spacing": 10
     },
     "custom/spotify": {
-		"interval": 1,
-		"return-type": "json",
-		"exec": "~/.config/waybar/modules/spotify",
-		"exec-if": "pgrep spotify",
-		"escape": true
+	"interval": 1,
+	"return-type": "json",
+	"exec": "~/.config/waybar/modules/spotify",
+	"exec-if": "pgrep spotify",
+	"escape": true
     },
     "sway/workspaces": {
-		"disable-scroll-wraparound": true
-    },
-	"sway/window": {
-		"format": "{}",
-		"max-length": 100,
-		"tooltip": false
-	}
+	"disable-scroll-wraparound": true
+    }
 }
