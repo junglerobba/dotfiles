@@ -185,6 +185,8 @@ client.focused #333333 #222222 #ffffff #292d2e #222222
 bindsym $mod+r mode "resize"
 
 exec --no-startup-id xinput --set-prop 'Kingsis Peripherals ZOWIE Gaming mouse' 'libinput Accel Profile Enabled' 0, 1
+exec --no-startup-id "setxkbmap -layout 'us,us(intl)' -option 'grp:alt_shift_toggle'"
+
 bindsym XF86AudioLowerVolume exec --no-startup-id playerctl play-pause
 bindsym XF86AudioRaiseVolume exec --no-startup-id playerctl next
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
@@ -199,7 +201,7 @@ exec --no-startup-id redshift
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-  status_command  i3status | i3spotifystatus
+  status_command  i3status
   position top
   tray_output primary
   tray_padding 5

@@ -208,7 +208,8 @@ bar {
 input * {
   accel_profile flat
   xkb_numlock enabled
-  xkb_layout de
+  xkb_layout us,us(intl)
+  xkb_options grp:alt_shift_toggle
 }
 seat seat0 attach *
 
