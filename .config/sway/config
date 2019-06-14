@@ -211,24 +211,11 @@ input * {
   xkb_layout us,us(intl)
   xkb_options grp:alt_shift_toggle
 }
-seat seat0 attach *
-
-# ## Steam
-# # https://github.com/ValveSoftware/steam-for-linux/issues/1040
-for_window [class="^Steam$"] floating enable
-# for_window [class="^Steam$" title="^Friends List*$"] floating enable
-# for_window [class="^Steam$" title="^Steam$"] floating enable
-# for_window [class="^Steam$" title="Steam - News"] floating enable
-# for_window [class="^Steam$" title=".* - Chat"] floating enable
-# for_window [class="^Steam$" title="^Settings$"] floating enable
-# for_window [class="^Steam$" title=".* - event started"] floating enable
-# for_window [class="^Steam$" title=".* CD key"] floating enable
-# for_window [class="^Steam$" title="^Steam - Self Updater$"] floating enable
-# for_window [class="^Steam$" title="^Screenshot Uploader$"] floating enable
-# for_window [class="^Steam$" title="^Steam Guard - Computer Authorization Required$"] floating enable
-# for_window [title="^Steam Keyboard$"] floating enable    
 
 workspace $ws10 output DP-2
 workspace $ws9 output DP-2
 
+for_window [class="^Steam$"] floating enable
 for_window [title="Calculator"] floating enable
+for_window [class="Spotify"] move workspace $ws9
+assign [class="discord"] $ws10
