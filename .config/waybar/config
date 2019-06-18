@@ -1,7 +1,7 @@
 {
     "modules-left": ["sway/workspaces", "sway/mode"],
     "modules-center": [],
-    "modules-right": ["custom/spotify", "tray", "pulseaudio", "clock"],
+    "modules-right": ["tray", "pulseaudio", "clock"],
     "clock": {
 		"interval": 1,
 		"format": "{:%a  %Y/%m/%d  %H:%M:%S}"
@@ -26,13 +26,6 @@
     "tray": {
         "icon-size": 15,
 		"spacing": 10
-    },
-    "custom/spotify": {
-		"interval": 1,
-		"return-type": "json",
-		"exec": "~/.config/waybar/modules/spotify",
-		"exec-if": "pgrep spotify",
-		"escape": true
     },
     "sway/workspaces": {
 		"disable-scroll-wraparound": true,
