@@ -16,7 +16,7 @@
     background-color:      #1a1a1a;
     border-color:          #fafafa;
     text-color:           #fafafa;
-    font:            "Roboto 10";
+    font:            "Source Code Pro 10";
 }
 
 #window {

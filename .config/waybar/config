@@ -4,7 +4,7 @@
     "modules-right": ["tray", "pulseaudio", "clock"],
     "clock": {
 		"interval": 1,
-		"format": "{:%a  %Y/%m/%d  %H:%M:%S}"
+		"format": "{:%a %Y/%m/%d %H:%M:%S}"
     },
 	"pulseaudio": {
 	    "format": "{icon}",

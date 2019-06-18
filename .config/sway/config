@@ -234,7 +234,7 @@ smart_gaps on
 
 gaps inner 5
 
-font pango:roboto 10
+font pango:source code pro 10
 
 client.focused #333333 #222222 #ffffff #292d2e #222222
 
