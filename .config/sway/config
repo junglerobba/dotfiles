@@ -242,4 +242,3 @@ client.focused #333333 #222222 #ffffff #292d2e #222222
 #
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 exec mako
-exec steam -silent
