@@ -158,7 +158,7 @@ input '1130:269:HID_046a:010d' {
 
 # Window rules
 #
-for_window [class="^Steam$"] floating enable
+for_window [class="steam"] fullscreen disable
 for_window [title="Calculator"] floating enable
 for_window [class="Spotify"] move workspace 9
 assign [class="discord"] workspace 10
