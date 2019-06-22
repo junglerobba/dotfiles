@@ -61,7 +61,7 @@ input '6899:1:Kingsis_Peripherals_ZOWIE_Gaming_mouse' {
 	accel_profile flat
 }
 
-input '1130:269:HID_046a:010d' {
+input '9456:320:Metadot_-_Das_Keyboard_Das_Keyboard' {
 	xkb_numlock enabled
 	xkb_layout us,us(intl)
 	xkb_options grp:alt_shift_toggle
@@ -100,9 +100,13 @@ input '1130:269:HID_046a:010d' {
 	bindsym $mod+Shift+l exec screenlock
 
 	# Media keys
-	bindsym --locked XF86AudioLowerVolume exec playerctl play-pause
-	bindsym --locked XF86AudioRaiseVolume exec playerctl next
+	bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -1%
+	bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +1%
 	bindsym --locked XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+	bindsym --locked XF86AudioPlay exec playerctl play-pause
+	bindsym --locked XF86AudioNext exec playerctl next
+	bindsym --locked XF86AudioPrev exec playerctl previous
 
 	# Screenshots
 	bindsym Shift+Print exec grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name') - | wl-copy
