@@ -100,8 +100,8 @@ input '9456:320:Metadot_-_Das_Keyboard_Das_Keyboard' {
 	bindsym $mod+Shift+l exec screenlock
 
 	# Media keys
-	bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -1%
-	bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +1%
+	# bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -1%
+	# bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +1%
 	bindsym --locked XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 	bindsym --locked XF86AudioPlay exec playerctl play-pause

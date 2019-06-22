@@ -187,8 +187,8 @@ bindsym $mod+r mode "resize"
 exec --no-startup-id xinput --set-prop 'Kingsis Peripherals ZOWIE Gaming mouse' 'libinput Accel Profile Enabled' 0, 1
 exec --no-startup-id "setxkbmap -layout 'us,us(intl)' -option 'grp:alt_shift_toggle'"
 
-bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -1%
-bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +1%
+# bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -1%
+# bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +1%
 bindsym --locked XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 bindsym --locked XF86AudioPlay exec playerctl play-pause
