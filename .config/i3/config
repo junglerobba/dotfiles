@@ -43,6 +43,7 @@ bindsym $mod+Shift+q kill
 # installed.
 bindsym $mod+d exec --no-startup-id rofi -show drun
 bindsym $mod+x exec --no-startup-id rofi -show run
+bindsym $mod+m exec --no-startup-id rofimoji
 bindsym $mod+Tab exec --no-startup-id rofi -show window
 
 # change focus

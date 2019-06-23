@@ -83,6 +83,7 @@ input '9456:320:Metadot_-_Das_Keyboard_Das_Keyboard' {
     # Start your launcher
     bindsym $mod+d exec $menu drun
     bindsym $mod+x exec $menu run
+    bindsym $mod+m exec rofimoji
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
