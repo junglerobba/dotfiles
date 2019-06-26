@@ -81,9 +81,8 @@ input '9456:320:Metadot_-_Das_Keyboard_Das_Keyboard' {
     bindsym $mod+Shift+q kill
 
     # Start your launcher
-    bindsym $mod+d exec $menu drun
-    bindsym $mod+x exec $menu run
-    bindsym $mod+m exec rofimoji
+	bindsym $mod+d exec j4-dmenu-desktop --dmenu='bemenu -i --nb "#1a1a1a" --nf "#fafafa" --hb "#1a1a1a" --hf "#00afff" --sb "#1a1a1a" --sf "#00afff" --tb "#1a1a1a" --fb "#1a1a1a" --ff "#fafafa" --prompt "" --fn "Source Code Pro 10"' --term='termite' --display-binary
+	bindsym $mod+x exec bemenu-run -i --nb "#1a1a1a" --nf "#fafafa" --hb "#1a1a1a" --hf "#00afff" --sb "#1a1a1a" --sf "#00afff" --tb "#1a1a1a" --fb "#1a1a1a" --ff "#fafafa" --prompt "" --fn "Source Code Pro 10"
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
