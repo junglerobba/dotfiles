@@ -3,7 +3,8 @@
 swayidle \
     timeout 10 'swaymsg "output * dpms off"' \
     resume 'swaymsg "output * dpms on"' &
+SWAYIDLE_PID=$!
 # lock screen
-swaylock -c000000
-# kill last background task
-pkill swayidle
+swaylock
+# kill swayidle
+kill $SWAYIDLE_PID
