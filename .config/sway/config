@@ -168,7 +168,7 @@ input * {
 for_window [class="steam"] fullscreen disable
 for_window [title="Calculator"] floating enable
 for_window [class="Spotify"] move workspace 9
-assign [class="discord"] workspace 10
+for_window [class="discord"] move workspace 10
 
 #
 # Layout stuff:
