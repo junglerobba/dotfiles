@@ -57,11 +57,14 @@ output DP-2 resolution 1920x1080 position 2560,0
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
 
-input '6899:1:Kingsis_Peripherals_ZOWIE_Gaming_mouse' {
+# separate config for visibility only, still uses wildcards
+# mouse
+input * {
 	accel_profile flat
 }
 
-input '9456:320:Metadot_-_Das_Keyboard_Das_Keyboard' {
+# keyboard
+input * {
 	xkb_numlock enabled
 	xkb_layout us,us(intl)
 	xkb_options grp:alt_shift_toggle
