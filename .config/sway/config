@@ -85,7 +85,7 @@ input * {
 
     # Start your launcher
 	bindsym $mod+d exec j4-dmenu-desktop --dmenu='bemenu -i --nb "#1a1a1a" --nf "#fafafa" --hb "#1a1a1a" --hf "#00afff" --sb "#1a1a1a" --sf "#00afff" --tb "#1a1a1a" --fb "#1a1a1a" --ff "#fafafa" --prompt "" --fn "Source Code Pro 10"' --term='termite' --display-binary
-	bindsym $mod+x exec bemenu-run -i --nb "#1a1a1a" --nf "#fafafa" --hb "#1a1a1a" --hf "#00afff" --sb "#1a1a1a" --sf "#00afff" --tb "#1a1a1a" --fb "#1a1a1a" --ff "#fafafa" --prompt "" --fn "Source Code Pro 10"
+	bindsym $mod+x exec bemenu-run -i --nb "#1a1a1a" --nf "#fafafa" --hb "#1a1a1a" --hf "#00afff" --sb "#1a1a1a" --sf "#00afff" --tb "#1a1a1a" --fb "#1a1a1a" --ff "#fafafa" --prompt "$" --fn "Source Code Pro 10"
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -112,8 +112,8 @@ input * {
 	bindsym --locked XF86AudioPrev exec playerctl previous
 
 	# Screenshots
-	bindsym Shift+Print exec grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name') - | wl-copy
-	bindsym Print exec grim -g "$(slurp)" - | wl-copy
+	bindsym Shift+Print exec grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name') $(xdg-user-dir PICTURES)/$(date +'%Y-%m-%d-%H%M%S_grim.png')
+	bindsym Print exec grim -g "$(slurp)" $(xdg-user-dir PICTURES)/$(date +'%Y-%m-%d-%H%M%S_grim.png') 
 
 #
 # Moving around:
