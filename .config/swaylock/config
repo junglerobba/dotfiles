@@ -1,1 +1,6 @@
 color=000000
+hide-keyboard-layout
+disable-caps-lock-text
+indicator-caps-lock
+indicator-radius=100
+indicator-thickness=5
