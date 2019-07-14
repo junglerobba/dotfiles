@@ -28,6 +28,7 @@
 		"spacing": 10
     },
     "sway/workspaces": {
-		"disable-scroll-wraparound": true
+		"disable-scroll-wraparound": true,
+		"enable-bar-scroll": true
     }
 }
