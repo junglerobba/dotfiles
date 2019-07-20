@@ -15,29 +15,30 @@ window#waybar {
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button {
-    padding: 3px 3px;
+    padding: 2px 5px 4px 5px;
     color: #afafaf;
+    background: transparent;
+    border-top: 2px solid transparent;
 }
 
 #workspaces button:hover {
-    background-color: #999999;
+  border-top: 2px solid rgba(255, 255, 255, 0.15);
 }
 
 #workspaces button.visible {
     color: #ffffff;
+    background: rgba(255, 255, 255, 0.15);
 }
 
 #workspaces button.focused {
-    color: #00afff;
+    color: #ffffff;
+    border-top: 2px solid white;
+    background: rgba(255, 255, 255, 0.15);
 }
 
 #workspaces button.urgent {
     background-color: #eb4d4b;
     color: #ffffff;
-}
-
-#workspaces button.urgent:hover {
-    color: #eb4d4b;
 }
 
 #clock, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #custom-media, #tray, #mode, #idle_inhibitor {
@@ -53,6 +54,7 @@ window#waybar {
     color: #eb4d4b;
 }
 
-.spotify {
+.playing {
     color: #9ec600;
+    padding: 3px 7px;
 }
