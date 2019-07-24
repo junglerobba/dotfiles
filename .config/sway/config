@@ -208,7 +208,7 @@ for_window [class="discord"] move workspace 10
     # If there are multiple scratchpad windows, this command cycles through them.
     bindsym $mod+minus scratchpad show
 #
-# Resizing containers:
+# Modes:
 #
 mode "resize" {
     # Ditto, with arrow keys
@@ -222,6 +222,19 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
+
+mode notifications {
+	bindsym Escape mode default
+	bindsym Return exec makoctl invoke; exec makoctl dismiss; mode default
+	bindsym d exec makoctl dismiss; mode default
+	bindsym Shift+d exec makoctl dismiss -a; mode default
+}
+bindsym $mod+m mode notifications
+
+mode passthrough {
+	bindsym $mod+Pause mode default
+}
+bindsym $mod+Pause mode passthrough
 
 #
 # Status Bar:
