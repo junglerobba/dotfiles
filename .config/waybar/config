@@ -1,6 +1,6 @@
 {
   "modules-left": ["sway/workspaces", "sway/mode"],
-  "modules-center": [],
+  "modules-center": ["sway/window"],
   "modules-right": ["tray", "pulseaudio", "custom/spotify", "clock"],
   "clock": {
 		"interval": 1,
@@ -30,6 +30,10 @@
   "sway/workspaces": {
       "disable-scroll-wraparound": true,
       "enable-bar-scroll": true
+  },
+  "sway/window": {
+    "format": "{}",
+    "max-length": 50
   },
   "custom/spotify": {
     "interval": 1,

@@ -246,17 +246,20 @@ bar {
 
 # Styling
 #
-default_border none
-default_floating_border normal
+default_border pixel 2
+default_floating_border pixel 1 
 hide_edge_borders smart_no_gaps
-title_align center
 smart_gaps on
 
-gaps inner 5
+gaps inner 3
+
+focus_on_window_activation urgent
 
 font pango:source code pro 10
 
-client.focused #333333 #222222 #ffffff #292d2e #222222
+client.focused #3c3c3c #3c3c3c #ffffff #ffffff #ffffff
+client.focused_inactive #3c3c3c #3c3c3c #ffffff #1a1a1a #1a1a1a
+client.unfocused #1a1a1a #1a1a1a #afafaf #1a1a1a #1a1a1a
 
 # GTK Stuff
 
