@@ -52,6 +52,10 @@ window#waybar {
 
 #mode {
     color: #eb4d4b;
+    padding: 0 7px;
+}
+
+#window {
     padding: 0 14px;
 }
 
