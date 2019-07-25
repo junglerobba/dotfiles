@@ -15,6 +15,12 @@ set $files nautilus
 # Note: it's recommended that you pass the final command to sway
 set $menu rofi -show 
 
+# Home row direction keys, like vim
+set $left h
+set $down j
+set $up k
+set $right l
+
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
@@ -91,14 +97,6 @@ input type:keyboard {
     # mouse button for dragging.
     floating_modifier $mod normal
 
-    # Reload the configuration file
-    bindsym $mod+Shift+c reload
-
-    # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
-
-	bindsym $mod+Shift+l exec screenlock
-
 	# Media keys
 	# bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -1%
 	# bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +1%
@@ -115,12 +113,22 @@ input type:keyboard {
 #
 # Moving around:
 #
+    # Move your focus around
+    bindsym $mod+$left focus left
+    bindsym $mod+$down focus down
+    bindsym $mod+$up focus up
+    bindsym $mod+$right focus right
     # Or use $mod+[up|down|left|right]
     bindsym $mod+Left focus left
     bindsym $mod+Down focus down
     bindsym $mod+Up focus up
     bindsym $mod+Right focus right
 
+    # Move the focused window with the same, but add Shift
+    bindsym $mod+Shift+$left move left
+    bindsym $mod+Shift+$down move down
+    bindsym $mod+Shift+$up move up
+    bindsym $mod+Shift+$right move right
     # Ditto, with arrow keys
     bindsym $mod+Shift+Left move left
     bindsym $mod+Shift+Down move down
@@ -154,8 +162,10 @@ input type:keyboard {
     # Note: workspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
 	
-	bindsym $mod+Shift+m move workspace to output right
-	bindsym $mod+Shift+n move workspace to output left
+	bindsym $mod+period focus output right
+	bindsym $mod+comma focus output left
+	bindsym $mod+Shift+period move workspace to output right
+	bindsym $mod+Shift+comma move workspace to output left
 
 	workspace 10 output DP-2
 	workspace 9 output DP-2
@@ -174,7 +184,7 @@ assign [app_id="firefox"] workspace 4
     # You can "split" the current object of your focus with
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
-    bindsym $mod+h splith
+    bindsym $mod+b splith
     bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
@@ -209,6 +219,15 @@ assign [app_id="firefox"] workspace 4
 # Modes:
 #
 mode "resize" {
+    # left will shrink the containers width
+    # right will grow the containers width
+    # up will shrink the containers height
+    # down will grow the containers height
+    bindsym $left resize shrink width 10px
+    bindsym $down resize grow height 10px
+    bindsym $up resize shrink height 10px
+    bindsym $right resize grow width 10px
+
     # Ditto, with arrow keys
     bindsym Left resize shrink width 10px
     bindsym Down resize grow height 10px
@@ -233,6 +252,18 @@ mode passthrough {
 	bindsym $mod+Pause mode default
 }
 bindsym $mod+Pause mode passthrough
+
+mode system {
+  bindsym l exec screenlock; mode default
+  bindsym r exec systemctl reboot
+  bindsym p exec systemctl poweroff
+  bindsym e exit
+  bindsym c reload
+
+  bindsym Escape mode "default"
+  bindsym BackSpace mode "default"
+}
+bindsym $mod+BackSpace mode system
 
 #
 # Status Bar:
