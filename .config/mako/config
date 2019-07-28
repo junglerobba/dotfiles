@@ -1,12 +1,14 @@
 font=Source Code Pro 11
-background-color=#222222
-text-color=#f0f0f0
-border-color=#252525
+background-color=#1a1a1a
+text-color=#ffffff
+border-size=0
 
 output=
 layer=overlay
 default-timeout=5000
 
 height=400
-margin=10,0
-padding=7
+margin=10,11
+padding=5,5
+
+format=<b>%s</b> <small><i>%a</i></small>\n%b
