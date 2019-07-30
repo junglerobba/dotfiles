@@ -47,10 +47,10 @@ bindsym $mod+m exec --no-startup-id rofimoji
 bindsym $mod+Tab exec --no-startup-id rofi -show window
 
 # change focus
-# bindsym $mod+j focus left
-# bindsym $mod+k focus down
-# bindsym $mod+l focus up
-# bindsym $mod+odiaeresis focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -59,10 +59,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-# bindsym $mod+Shift+j move left
-# bindsym $mod+Shift+k move down
-# bindsym $mod+Shift+l move up
-# bindsym $mod+Shift+odiaeresis move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -71,7 +71,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+b split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -133,17 +133,10 @@ bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
-bindsym $mod+Shift+m move workspace to output right
-bindsym $mod+Shift+n move workspace to output left
-
-# reload the configuration file
-bindsym $mod+Shift+c reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
-# exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
-
-bindsym $mod+Shift+l exec i3lock -c 101010 && sleep 1 && xset s activate
+bindsym $mod+period focus output right
+bindsym $mod+comma focus output left
+bindsym $mod+Shift+period move workspace to output right
+bindsym $mod+Shift+comma move workspace to output left
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -153,10 +146,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym odiaeresis resize grow width 10 px or 10 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -170,15 +163,33 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
-default_border none
-default_floating_border normal
-hide_edge_borders smart_no_gaps
-title_align center
+mode passthrough {
+	bindsym $mod+Pause mode default
+}
+bindsym $mod+Pause mode passthrough
 
-gaps inner 5
+mode system {
+  bindsym l exec exec i3lock -c 101010 && sleep 1 && xset s activate; mode "default"
+  bindsym r exec systemctl reboot
+  bindsym p exec systemctl poweroff
+  bindsym e exit
+  bindsym c restart
+
+  bindsym Escape mode "default"
+  bindsym BackSpace mode "default"
+}
+bindsym $mod+BackSpace mode system
+
+default_border pixel 2
+default_floating_border pixel 1
+hide_edge_borders smart_no_gaps
 smart_gaps on
 
-client.focused #333333 #222222 #ffffff #292d2e #222222
+gaps inner 3
+
+client.focused #3c3c3c #3c3c3c #ffffff #ffffff #ffffff
+client.focused_inactive #3c3c3c #3c3c3c #ffffff #1a1a1a #1a1a1a
+client.unfocused #1a1a1a #1a1a1a #afafaf #1a1a1a #1a1a1a
 
 bindsym $mod+r mode "resize"
 
@@ -199,6 +210,7 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 exec --no-startup-id dunst
 exec --no-startup-id feh --bg-fill ~/Pictures/wallpaper
 exec --no-startup-id redshift
+exec --no-startup-id /usr/lib/gsd-xsettings
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
