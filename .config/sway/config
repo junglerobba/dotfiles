@@ -67,6 +67,8 @@ input type:pointer {
 	accel_profile flat
 }
 
+seat * hide_cursor 10000
+
 input type:keyboard {
 	xkb_numlock enabled
 	xkb_layout us,us(intl)
