@@ -38,6 +38,7 @@ settings:
   content.autoplay:
     global: false
   content.notifications:
+    https://linuxrocks.online: true
     https://www.cloudways.com: false
     https://www.reddit.com: true
   content.register_protocol_handler:
@@ -91,7 +92,7 @@ settings:
   statusbar.hide:
     global: false
   tabs.indicator.width:
-    global: 1
+    global: 0
   tabs.last_close:
     global: close
   tabs.max_width:
