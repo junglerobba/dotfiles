@@ -75,4 +75,3 @@ alias la='ls -lAFh --color=auto'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 export EDITOR=/usr/bin/vim
-export MAKEFLAGS='-j16'
