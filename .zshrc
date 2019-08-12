@@ -49,9 +49,17 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*' rehash true
 setopt COMPLETE_ALIASES
 setopt AUTO_CD
-setopt HIST_IGNORE_SPACE
-setopt HIST_FIND_NO_DUPS
 setopt PROMPT_SUBST
+
+# History
+HISTFILE=$HOME/.history
+SAVEHIST=1000
+HISTSIZE=1000
+setopt INC_APPEND_HISTORY
+setopt SHARE_HISTORY
+setopt HIST_IGNORE_SPACE
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_FIND_NO_DUPS
 
 autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
 zle -N up-line-or-beginning-search
