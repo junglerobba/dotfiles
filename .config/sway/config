@@ -293,8 +293,8 @@ focus_on_window_activation urgent
 
 font pango:source code pro 10
 
-client.focused #3c3c3c #3c3c3c #ffffff #ffffff #ffffff
-client.focused_inactive #3c3c3c #3c3c3c #ffffff #1a1a1a #1a1a1a
+client.focused #3c3c3c #3c3c3c #fafafa #fafafa #fafafa
+client.focused_inactive #3c3c3c #3c3c3c #fafafa #1a1a1a #1a1a1a
 client.unfocused #1a1a1a #1a1a1a #afafaf #1a1a1a #1a1a1a
 
 # GTK Stuff

@@ -1,7 +1,8 @@
 font=Source Code Pro 11
 background-color=#1a1a1a
-text-color=#ffffff
-border-size=0
+text-color=#fafafa
+border-size=1
+border-color=#fafafa
 
 output=
 layer=overlay
