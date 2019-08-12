@@ -16,7 +16,7 @@
     background-color:      #1a1a1a;
     border-color:          #fafafa;
     text-color:           #fafafa;
-    font:            "Source Code Pro 10";
+    font:            "DejaVu Sans Mono 10";
 }
 
 #window {

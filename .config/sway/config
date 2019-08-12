@@ -94,8 +94,8 @@ input type:keyboard {
     bindsym $mod+Shift+q kill
 
     # Start your launcher
-	bindsym $mod+d exec j4-dmenu-desktop --dmenu='bemenu -i --nb "#1a1a1a" --nf "#fafafa" --hb "#1a1a1a" --hf "#00afff" --sb "#1a1a1a" --sf "#00afff" --tb "#1a1a1a" --fb "#1a1a1a" --ff "#fafafa" --prompt "" --fn "Source Code Pro 10"' --term='termite' --display-binary
-	bindsym $mod+x exec bemenu-run -i --nb "#1a1a1a" --nf "#fafafa" --hb "#1a1a1a" --hf "#00afff" --sb "#1a1a1a" --sf "#00afff" --tb "#1a1a1a" --fb "#1a1a1a" --ff "#fafafa" --prompt "$" --fn "Source Code Pro 10"
+    bindsym $mod+d exec j4-dmenu-desktop --dmenu='bemenu -i --nb "#1a1a1a" --nf "#fafafa" --hb "#1a1a1a" --hf "#00afff" --sb "#1a1a1a" --sf "#00afff" --tb "#1a1a1a" --fb "#1a1a1a" --ff "#fafafa" --prompt "" --fn "DejaVu Sans Mono 10"' --term='termite' --display-binary
+    bindsym $mod+x exec bemenu-run -i --nb "#1a1a1a" --nf "#fafafa" --hb "#1a1a1a" --hf "#00afff" --sb "#1a1a1a" --sf "#00afff" --tb "#1a1a1a" --fb "#1a1a1a" --ff "#fafafa" --prompt "$" --fn "DejaVu Sans Mono 10"
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -291,7 +291,7 @@ gaps inner 3
 
 focus_on_window_activation urgent
 
-font pango:source code pro 10
+font pango:dejavu sans mono 10
 
 client.focused #3c3c3c #3c3c3c #fafafa #fafafa #fafafa
 client.focused_inactive #3c3c3c #3c3c3c #fafafa #1a1a1a #1a1a1a
@@ -304,10 +304,10 @@ exec_always {
 	gsettings set org.gnome.desktop.interface icon-theme 'Adwaita'
 	gsettings set org.gnome.desktop.interface cursor-theme 'Adwaita'
 	gsettings set org.gnome.desktop.interface font-name 'Roboto 10'
-	gsettings set org.gnome.desktop.interface monospace-font-name 'Source Code Pro 10'
+	gsettings set org.gnome.desktop.interface monospace-font-name 'DejaVu Sans Mono 10'
 	gsettings set org.gnome.desktop.interface document-font-name 'Noto Sans 10'
   gsettings set org.gnome.settings-daemon.plugins.xsettings antialiasing rgba
-  gsettings set org.gnome.settings-daemon.plugins.xsettings hinting medium
+  gsettings set org.gnome.settings-daemon.plugins.xsettings hinting slight
 }
 # Autostart
 #
