@@ -14,6 +14,14 @@ set $term termite
 set $files $term -e "ranger"
 # Audio mixer
 set $mixer $term -e "pulsemixer"
+# System monitor
+set $monitor $term -e "htop"
+# Email client
+set $email $term -e "aerc"
+# IRC client
+set $irc $term -e "irssi"
+# browser
+set $browser qutebrowser
 # Your preferred application launcher
 # Note: it's recommended that you pass the final command to sway
 set $menu rofi -show 
@@ -86,10 +94,24 @@ input type:keyboard {
     bindsym $mod+Return exec $term
 
     # Start file manager
-    bindsym $mod+n exec $files
-
+    bindsym $mod+t exec $files
+    # Start browser
+    bindsym $mod+y exec $browser
+    # Start email client
+    bindsym $mod+u exec $email
+    # Start irc client
+    bindsym $mod+i exec $irc
+    bindsym $mod+Shift+i exec discord
+    # Start system monitor
+    bindsym $mod+o exec $monitor
+    bindsym $mod+Shift+o exec gnome-system-monitor
     # Start pulsemixer
     bindsym $mod+p exec $mixer
+    bindsym $mod+Shift+p exec spotify
+    # Start steam
+    bindsym $mod+g exec steam
+    bindsym $mod+Shift+g exec steam steam://open/friends
+
     # Kill focused window
     bindsym $mod+Shift+q kill
 
@@ -253,7 +275,7 @@ mode notifications {
 	bindsym d exec makoctl dismiss; mode default
 	bindsym Shift+d exec makoctl dismiss -a; mode default
 }
-bindsym $mod+m mode notifications
+bindsym $mod+n mode notifications
 
 mode passthrough {
 	bindsym $mod+Pause mode default
