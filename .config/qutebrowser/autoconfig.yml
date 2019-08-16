@@ -111,5 +111,11 @@ settings:
     global: '{audio}{current_title}'
   tabs.wrap:
     global: false
+  url.searchengines:
+    global:
+      DEFAULT: https://google.com/search?q={}
+      ddg: https://duckduckgo.com/?q={}
+  url.start_pages:
+    global: about:blank
   window.title_format:
     global: '{perc}{current_title}'
