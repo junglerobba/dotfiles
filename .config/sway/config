@@ -334,7 +334,6 @@ exec_always {
 # Autostart
 #
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-exec /usr/lib/xdg-desktop-portal -r & xdg-desktop-portal-wlr
 exec /usr/lib/gsd-xsettings
 exec mako
 exec steam -silent
