@@ -20,6 +20,8 @@ set $monitor $term -e "htop"
 set $email $term -e "aerc"
 # IRC client
 set $irc $term -e "irssi"
+# Music player
+set $music $term -e "cmus"
 # browser
 set $browser qutebrowser
 # Your preferred application launcher
@@ -107,7 +109,7 @@ input type:keyboard {
     bindsym $mod+Shift+o exec gnome-system-monitor
     # Start pulsemixer
     bindsym $mod+p exec $mixer
-    bindsym $mod+Shift+p exec spotify
+    bindsym $mod+Shift+p exec $music
     # Start steam
     bindsym $mod+g exec steam
     bindsym $mod+Shift+g exec steam steam://open/friends
