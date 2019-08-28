@@ -46,39 +46,39 @@ settings:
   content.windowed_fullscreen:
     global: true
   fonts.completion.category:
-    global: bold 10pt source code pro
+    global: bold 10pt dejavu sans mono
   fonts.completion.entry:
-    global: 10pt source code pro
+    global: 10pt dejavu sans mono
   fonts.debug_console:
-    global: 10pt source code pro
+    global: 10pt dejavu sans mono
   fonts.downloads:
-    global: 10pt source code pro
+    global: 10pt dejavu sans mono
   fonts.hints:
-    global: bold 10pt source code pro
+    global: bold 10pt dejavu sans mono
   fonts.keyhint:
-    global: 10pt source code pro
+    global: 10pt dejavu sans mono
   fonts.messages.error:
-    global: 10pt source code pro
+    global: 10pt dejavu sans mono
   fonts.messages.info:
-    global: 10pt source code pro
+    global: 10pt dejavu sans mono
   fonts.messages.warning:
-    global: 10pt source code pro
+    global: 10pt dejavu sans mono
   fonts.monospace:
-    global: '"Source Code Pro", Terminus, Monospace, "DejaVu Sans Mono", Monaco, "Bitstream
-      Vera Sans Mono", "Andale Mono", "Courier New", Courier, "Liberation Mono", monospace,
-      Fixed, Consolas, Terminal'
+    global: '"DejaVu Sans Mono", Terminus, Monospace, "DejaVu Sans Mono", Monaco,
+      "Bitstream Vera Sans Mono", "Andale Mono", "Courier New", Courier, "Liberation
+      Mono", monospace, Fixed, Consolas, Terminal'
   fonts.prompts:
-    global: 10pt source code pro
+    global: 10pt dejavu sans mono
   fonts.statusbar:
-    global: 10pt source code pro
+    global: 10pt dejavu sans mono
   fonts.tabs:
-    global: 10pt source code pro
+    global: 10pt dejavu sans mono
   fonts.web.family.cursive:
     global: roboto
   fonts.web.family.fantasy:
     global: roboto
   fonts.web.family.fixed:
-    global: source code pro
+    global: dejavu sans mono
   fonts.web.family.sans_serif:
     global: noto sans
   fonts.web.family.serif:
