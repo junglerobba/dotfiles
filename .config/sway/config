@@ -294,7 +294,7 @@ mode system {
   bindsym Escape mode "default"
   bindsym BackSpace mode "default"
 }
-bindsym $mod+BackSpace mode system
+bindsym $mod+BackSpace exec notify-send -a "" "SYSTEM MODE"; mode system
 
 #
 # Status Bar:
