@@ -26,7 +26,7 @@ set $music $term -e "cmus"
 set $browser qutebrowser
 # Your preferred application launcher
 # Note: it's recommended that you pass the final command to sway
-set $menu rofi -show 
+set $menu $term --name=launcher -e launcher
 
 # Home row direction keys, like vim
 set $left h
@@ -118,8 +118,7 @@ input type:keyboard {
     bindsym $mod+Shift+q kill
 
     # Start your launcher
-    bindsym $mod+d exec j4-dmenu-desktop --dmenu='bemenu -i --nb "#1a1a1a" --nf "#fafafa" --hb "#1a1a1a" --hf "#00afff" --sb "#1a1a1a" --sf "#00afff" --tb "#1a1a1a" --fb "#1a1a1a" --ff "#fafafa" --prompt "" --fn "DejaVu Sans Mono 10"' --term='termite' --display-binary
-    bindsym $mod+x exec bemenu-run -i --nb "#1a1a1a" --nf "#fafafa" --hb "#1a1a1a" --hf "#00afff" --sb "#1a1a1a" --sf "#00afff" --tb "#1a1a1a" --fb "#1a1a1a" --ff "#fafafa" --prompt "$" --fn "DejaVu Sans Mono 10"
+    bindsym $mod+d exec $menu
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -203,6 +202,7 @@ input type:keyboard {
 
 # Window rules
 #
+for_window [app_id="^launcher$"] floating enable, border none, resize set width 100 ppt height 25 ppt, move position 0 px 0 px
 for_window [class="steam"] fullscreen disable
 for_window [title="Calculator"] floating enable
 for_window [class="Spotify"] move workspace 9
