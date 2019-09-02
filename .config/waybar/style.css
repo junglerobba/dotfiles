@@ -8,7 +8,7 @@
 
 window#waybar {
     background: #1a1a1a;
-    color: #fafafa;
+    color: #efefef;
     transition-property: background, background-color;
     transition-duration: .5s;
 }
@@ -16,7 +16,7 @@ window#waybar {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button {
     padding: 2px 5px 4px 5px;
-    color: #afafaf;
+    color: #efefef;
     background: transparent;
     border-top: 2px solid transparent;
 }
@@ -26,24 +26,24 @@ window#waybar {
 }
 
 #workspaces button.visible {
-    color: #ffffff;
+    color: #efefef;
     background: rgba(255, 255, 255, 0.15);
 }
 
 #workspaces button.focused {
-    color: #ffffff;
+    color: #efefef;
     border-top: 2px solid white;
     background: rgba(255, 255, 255, 0.15);
 }
 
 #workspaces button.urgent {
     background-color: #eb4d4b;
-    color: #ffffff;
+    color: #efefef;
 }
 
 #clock, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #custom-media, #tray, #mode, #idle_inhibitor {
     padding: 3px 7px;
-    color: #fafafa;
+    color: #d0d0d0;
 }
 
 #pulseaudio.muted {

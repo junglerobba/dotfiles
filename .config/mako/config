@@ -1,8 +1,8 @@
 font=DejaVu Sans Mono 11
 background-color=#1a1a1a
-text-color=#fafafa
+text-color=#efefef
 border-size=1
-border-color=#fafafa
+border-color=#efefef
 
 output=
 layer=overlay

@@ -16,25 +16,25 @@ settings:
         <Ctrl+Shift+m>: hint links spawn --detach mpv {hint-url}
         M: spawn --detach mpv {url}
   colors.tabs.bar.bg:
-    global: '#1a1a1a'
+    global: '#101010'
   colors.tabs.even.bg:
-    global: '#1a1a1a'
+    global: '#101010'
   colors.tabs.even.fg:
-    global: '#afafaf'
+    global: '#d0d0d0'
   colors.tabs.indicator.error:
     global: '#ff0000'
   colors.tabs.odd.bg:
-    global: '#1a1a1a'
+    global: '#101010'
   colors.tabs.odd.fg:
-    global: '#afafaf'
+    global: '#d0d0d0'
   colors.tabs.selected.even.bg:
-    global: '#3c3c3c'
+    global: '#343434'
   colors.tabs.selected.even.fg:
-    global: white
+    global: '#efefef'
   colors.tabs.selected.odd.bg:
-    global: '#3c3c3c'
+    global: '#343434'
   colors.tabs.selected.odd.fg:
-    global: white
+    global: '#efefef'
   content.autoplay:
     global: false
   content.notifications:

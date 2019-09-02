@@ -2,7 +2,7 @@
 allow_bold = true
 #audible_bell = false
 bold_is_bright = true
-cell_height_scale = 1.18
+cell_height_scale = 1.19
 #cell_width_scale = 1.0
 clickable_url = true
 #dynamic_title = true
@@ -41,48 +41,39 @@ cursor_shape = block
 #scrollbar = off
 
 [colors]
-# If both of these are unset, cursor falls back to the foreground color,
-# and cursor_foreground falls back to the background color.
-#cursor = #dcdccc
-#cursor_foreground = #dcdccc
+# special
+foreground      = #efefef
+foreground_bold = #efefef
+background      = rgba(26, 26, 26, 0.97)
 
-foreground = #fafafa
-#foreground_bold = #ffffff
-#background = #fafafa
+# black
+color0  = #1a1a1a
+color8  = #5d5d5d
 
-# 20% background transparency (requires a compositor)
-background = rgba(26, 26, 26, 0.9)
+# red
+color1  = #e1321a
+color9  = #ff361e
 
-# If unset, will reverse foreground and background
-#highlight = #2f2f2f
+# green
+color2  = #6ab017
+color10 = #7bc91f
 
-# Colors from color0 to color254 can be set
-color0 = #000000
-color1 = #E8341C
-color2 = #68C256
-color3 = #F2D42C
-color4 = #1C98E8
-color5 = #8E69C9
-color6 = #1C98E8
-color7 = #BABABA
-color8 = #666666
-color9 = #E05A4F
-color10 = #77B869
-color11 = #EFD64B
-color12 = #387CD3
-color13 = #957BBE
-color14 = #3D97E2
-color15 = #BABABA
+# yellow
+color3  = #ffc005
+color11 = #ffd00a
 
-[hints]
-#font = Monospace 12
-#foreground = #dcdccc
-#background = #3f3f3f
-#active_foreground = #e68080
-#active_background = #3f3f3f
-#padding = 2
-#border = #3f3f3f
-#border_width = 0.5
-#roundness = 2.0
+# blue
+color4  = #004f9e
+color12 = #0071ff
 
-# vim: ft=dosini cms=#%s
+# magenta
+color5  = #ec0048
+color13 = #ff1d62
+
+# cyan
+color6  = #2aa7e7
+color14 = #4bb8fd
+
+# white
+color7  = #efefef
+color15 = #efefef
