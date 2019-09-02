@@ -12,4 +12,4 @@ height=400
 margin=10,11
 padding=5,5
 
-format=<b>%s</b> <small><i>%a</i></small>\n%b
+format=<b>%s</b>\n%b
