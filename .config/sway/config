@@ -97,6 +97,7 @@ input type:keyboard {
 
     # Start file manager
     bindsym $mod+t exec $files
+    bindsym $mod+Shift+t exec nautilus
     # Start browser
     bindsym $mod+y exec $browser
     # Start email client
