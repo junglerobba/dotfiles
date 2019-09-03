@@ -72,7 +72,7 @@ precmd() { vcs_info }
 zstyle ':vcs_info:git:*' formats '[%b]'
 
 RPROMPT='${vcs_info_msg_0_}'
-PROMPT='%2~ » '
+PROMPT='%2~ > '
 
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
