@@ -1,48 +1,48 @@
 {
-  "layer": "top",
-  "modules-left": ["sway/workspaces", "sway/window"],
-  "modules-center": [],
-  "modules-right": [ "sway/mode", "tray", "pulseaudio", "custom/spotify", "clock"],
-  "clock": {
-		"interval": 1,
-		"format": "{:%a %Y-%m-%d %H:%M:%S}"
-  },
-	"pulseaudio": {
-    "format": "{icon}",
-    "format-bluetooth": "{icon}",
-    "format-bluetooth-muted": "",
-    "format-muted": "",
-    "format-icons": {
-      "headphones": "",
-      "handsfree": "",
-      "headset": "",
-      "phone": "",
-      "portable": "",
-      "car": "",
-      "default": ["", ""]
+    "layer": "top",
+    "modules-left": ["sway/workspaces", "sway/window"],
+    "modules-center": [],
+    "modules-right": [ "sway/mode", "tray", "pulseaudio", "custom/spotify", "clock"],
+    "clock": {
+        "interval": 1,
+        "format": "{:%a %Y-%m-%d %H:%M:%S}"
     },
-    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-    "on-click-right": "pavucontrol",
-    "scroll-step": 0
-	},
-  "tray": {
-      "icon-size": 15,
-  "spacing": 10
-  },
-  "sway/workspaces": {
-      "disable-scroll-wraparound": true,
-      "enable-bar-scroll": true
-  },
-  "sway/window": {
-    "format": "{}",
-    "max-length": 80,
-    "tooltip": false
-  },
-  "custom/spotify": {
-    "interval": 1,
-    "return-type": "json",
-    "exec": "~/.config/waybar/modules/spotify",
-    "exec-if": "pgrep spotify",
-    "escape": true
-  }
+    "pulseaudio": {
+        "format": "{icon}",
+        "format-bluetooth": "{icon}",
+        "format-bluetooth-muted": "",
+        "format-muted": "",
+        "format-icons": {
+            "headphones": "",
+            "handsfree": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", ""]
+        },
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "on-click-right": "pavucontrol",
+        "scroll-step": 0
+    },
+    "tray": {
+        "icon-size": 15,
+        "spacing": 10
+    },
+    "sway/workspaces": {
+        "disable-scroll-wraparound": true,
+        "enable-bar-scroll": true
+    },
+    "sway/window": {
+        "format": "{}",
+        "max-length": 80,
+        "tooltip": false
+    },
+    "custom/spotify": {
+        "interval": 1,
+        "return-type": "json",
+        "exec": "~/.config/waybar/modules/spotify",
+        "exec-if": "pgrep spotify",
+        "escape": true
+    }
 }
