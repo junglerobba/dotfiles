@@ -1,4 +1,5 @@
 {
+  "layer": "top",
   "modules-left": ["sway/workspaces", "sway/window"],
   "modules-center": [],
   "modules-right": [ "sway/mode", "tray", "pulseaudio", "custom/spotify", "clock"],
