@@ -9,7 +9,7 @@ set tabstop=4
 set shiftwidth=4
 set autoindent
 set smartindent
-set expandtab
+set noexpandtab
 syntax on
 filetype plugin on
 
