@@ -246,3 +246,6 @@ c.fonts.web.family.fantasy = 'roboto'
 # Bindings for normal mode
 config.bind('<Ctrl+Shift+m>', 'hint links spawn --detach mpv {hint-url}')
 config.bind('M', 'spawn --detach mpv {url}')
+
+config.bind('<Ctrl+Shift+j>', 'tab-move +')
+config.bind('<Ctrl+Shift+k>', 'tab-move -')
