@@ -27,7 +27,7 @@ set $browser qutebrowser
 # Your preferred application launcher
 # Note: it's recommended that you pass the final command to sway
 set $menu $term --name=launcher -e launcher
-set $rofi wofi -s ~/.config/wofi/materia-dark.css -S
+set $rofi wofi -s ~/.config/wofi/materia-dark.css
 
 # Home row direction keys, like vim
 set $left h
@@ -113,15 +113,15 @@ input type:keyboard {
     bindsym $mod+p exec $mixer
     bindsym $mod+Shift+p exec $music
     # Start steam
-    bindsym $mod+g exec steam
-    bindsym $mod+Shift+g exec steam steam://open/friends
+    bindsym $mod+Shift+g exec steam
 
     # Kill focused window
     bindsym $mod+Shift+q kill
 
     # Start your launcher
-    bindsym $mod+d exec $rofi drun
-    bindsym $mod+x exec $rofi run
+    bindsym $mod+d exec $rofi -S drun
+    bindsym $mod+x exec $rofi -S run
+    bindsym $mod+g exec steam_dmenu -d "$rofi -d -k /dev/null"
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
