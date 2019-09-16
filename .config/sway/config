@@ -81,6 +81,8 @@ input type:pointer {
 	accel_profile flat
 }
 
+focus_follows_mouse always
+
 seat * hide_cursor 60000
 
 input type:keyboard {
