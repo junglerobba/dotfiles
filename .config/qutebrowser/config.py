@@ -126,6 +126,8 @@ c.url.start_pages = 'about:blank'
 # Type: FormatString
 c.window.title_format = '{perc}{current_title}'
 
+c.window.hide_decoration = True
+
 # Background color of the tab bar.
 # Type: QssColor
 c.colors.tabs.bar.bg = '#1a1a1a'
