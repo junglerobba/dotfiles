@@ -81,7 +81,7 @@ c.tabs.select_on_remove = 'last-used'
 # `{protocol}`: Protocol (http/https/...) of the current web page. *
 # `{audio}`: Indicator for audio/mute status.
 # Type: FormatString
-c.tabs.title.format = '{audio}{current_title}'
+c.tabs.title.format = '{perc}{audio}{current_title}'
 
 # Minimum width (in pixels) of tabs (-1 for the default minimum size
 # behavior). This setting only applies when tabs are horizontal. This
