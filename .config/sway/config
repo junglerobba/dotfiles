@@ -328,9 +328,10 @@ focus_on_window_activation urgent
 
 font pango:dejavu sans mono 10
 
-client.focused #3c3c3c #3c3c3c #efefef #efefef #efefef
-client.focused_inactive #3c3c3c #3c3c3c #efefef #1a1a1a #1a1a1a
-client.unfocused #1a1a1a #1a1a1a #efefef #1a1a1a #1a1a1a
+client.focused #1a1a1a #1a1a1a #efefef #efefef #efefef
+client.focused_inactive #1a1a1a #1a1a1a #efefef #1a1a1a #1a1a1a
+client.unfocused #3c3c3c #3c3c3c #efefef #3c3c3c #3c3c3c
+client.urgent #3c3c3c #eb4d4b #efefef #1a1a1a #1a1a1a
 
 # GTK Stuff
 

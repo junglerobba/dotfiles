@@ -130,7 +130,7 @@ c.window.hide_decoration = True
 
 # Background color of the tab bar.
 # Type: QssColor
-c.colors.tabs.bar.bg = '#1a1a1a'
+c.colors.tabs.bar.bg = '#3c3c3c'
 
 # Color for the tab indicator on errors.
 # Type: QtColor
@@ -138,19 +138,19 @@ c.colors.tabs.indicator.error = '#ff0000'
 
 # Foreground color of unselected odd tabs.
 # Type: QtColor
-c.colors.tabs.odd.fg = '#d0d0d0'
+c.colors.tabs.odd.fg = '#efefef'
 
 # Background color of unselected odd tabs.
 # Type: QtColor
-c.colors.tabs.odd.bg = '#1a1a1a'
+c.colors.tabs.odd.bg = '#3c3c3c'
 
 # Foreground color of unselected even tabs.
 # Type: QtColor
-c.colors.tabs.even.fg = '#d0d0d0'
+c.colors.tabs.even.fg = '#efefef'
 
 # Background color of unselected even tabs.
 # Type: QtColor
-c.colors.tabs.even.bg = '#1a1a1a'
+c.colors.tabs.even.bg = '#3c3c3c'
 
 # Foreground color of selected odd tabs.
 # Type: QtColor
@@ -158,7 +158,7 @@ c.colors.tabs.selected.odd.fg = '#efefef'
 
 # Background color of selected odd tabs.
 # Type: QtColor
-c.colors.tabs.selected.odd.bg = '#3c3c3c'
+c.colors.tabs.selected.odd.bg = '#1a1a1a'
 
 # Foreground color of selected even tabs.
 # Type: QtColor
@@ -166,7 +166,7 @@ c.colors.tabs.selected.even.fg = '#efefef'
 
 # Background color of selected even tabs.
 # Type: QtColor
-c.colors.tabs.selected.even.bg = '#3c3c3c'
+c.colors.tabs.selected.even.bg = '#1a1a1a'
 
 # Default monospace fonts. Whenever "monospace" is used in a font
 # setting, it's replaced with the fonts listed here.
