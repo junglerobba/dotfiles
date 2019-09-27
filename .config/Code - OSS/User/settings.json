@@ -1,16 +1,21 @@
 {
     "files.autoSave": "onFocusChange",
-    "editor.fontFamily": "'DejaVu Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontFamily": "'Source Code Pro', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.wordWrap": "on",
     "editor.find.autoFindInSelection": true,
     "editor.formatOnType": true,
-    "workbench.activityBar.visible": false,
+    "workbench.activityBar.visible": true,
     "update.enableWindowsBackgroundUpdates": false,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-    "breadcrumbs.enabled": false,
     "workbench.editor.enablePreview": false,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-    "window.menuBarVisibility": "toggle"
+    "window.menuBarVisibility": "toggle",
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.renderWhitespace": "boundary",
+    "files.trimTrailingWhitespace": true,
+    "editor.insertSpaces": false,
+    "workbench.tree.indent": 16,
+    "files.enableTrash": false
 }
