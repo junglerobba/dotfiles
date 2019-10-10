@@ -17,5 +17,7 @@
     "files.trimTrailingWhitespace": true,
     "editor.insertSpaces": false,
     "workbench.tree.indent": 16,
-    "files.enableTrash": false
+    "files.enableTrash": false,
+    "vim.hlsearch": true,
+    "vim.useSystemClipboard": true
 }
