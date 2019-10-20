@@ -199,8 +199,10 @@ input type:keyboard {
 	
 	bindsym $mod+period focus output right
 	bindsym $mod+comma focus output left
-	bindsym $mod+Shift+period move workspace to output right
-	bindsym $mod+Shift+comma move workspace to output left
+	bindsym $mod+Shift+period move container to output right
+	bindsym $mod+Shift+comma move container to output left
+	bindsym $mod+Ctrl+period move workspace to output right
+	bindsym $mod+Ctrl+comma move workspace to output left
 
 	workspace 10 output DP-2
 	workspace 9 output DP-2
