@@ -213,6 +213,7 @@ for_window [class="steam"] fullscreen disable
 for_window [title="Calculator"] floating enable
 for_window [class="Spotify"] move workspace 9
 for_window [class="discord"] move workspace 10
+for_window [class="Riot"] move workspace 10
 
 #
 # Layout stuff:
