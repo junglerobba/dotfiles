@@ -167,6 +167,11 @@ bindsym $mod+Shift+minus move scratchpad
 
 bindsym $mod+minus scratchpad show
 
+# Notifications:
+
+bindsym $mod+n exec makoctl invoke
+bindsym $mod+Shift+n exec makoctl dismiss
+
 # Modes:
 
 mode "resize" {
@@ -188,14 +193,6 @@ mode "resize" {
 	bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
-
-mode notifications {
-	bindsym Escape mode default
-	bindsym Return exec makoctl invoke; exec makoctl dismiss; mode default
-	bindsym d exec makoctl dismiss; mode default
-	bindsym Shift+d exec makoctl dismiss -a; mode default
-}
-bindsym $mod+n mode notifications
 
 mode passthrough {
 	bindsym $mod+Pause mode default
