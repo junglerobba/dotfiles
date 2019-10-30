@@ -204,6 +204,8 @@ input type:keyboard {
 	bindsym $mod+Ctrl+period move workspace to output right
 	bindsym $mod+Ctrl+comma move workspace to output left
 
+    bindsym $mod+Tab workspace back_and_forth
+
 	workspace 10 output DP-2
 	workspace 9 output DP-2
 
