@@ -66,6 +66,8 @@ bindsym $mod+g exec steam_dmenu -d "$rofi -d -k /dev/null"
 
 floating_modifier $mod normal
 
+bindsym $mod+Alt+l exec screenlock
+
 # Media keys
 # bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -1%
 # bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +1%
@@ -197,18 +199,6 @@ mode passthrough {
 	bindsym $mod+Pause mode default
 }
 bindsym $mod+Pause mode passthrough
-
-mode system {
-	bindsym l exec screenlock; mode default
-	bindsym r exec systemctl reboot
-	bindsym p exec systemctl poweroff
-	bindsym e exit
-	bindsym c reload
-
-	bindsym Escape mode "default"
-	bindsym BackSpace mode "default"
-}
-bindsym $mod+BackSpace mode system
 
 ### Bar
 
