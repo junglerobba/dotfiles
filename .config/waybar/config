@@ -8,8 +8,8 @@
         "format": "{:%a %Y-%m-%d %H:%M:%S}"
     },
     "pulseaudio": {
-        "format": "{icon}",
-        "format-bluetooth": "{icon}",
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{icon} {volume}%",
         "format-bluetooth-muted": "",
         "format-muted": "",
         "format-icons": {
@@ -21,7 +21,7 @@
             "car": "",
             "default": ["", ""]
         },
-        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "on-click": "pamixer -t",
         "on-click-right": "pavucontrol",
         "scroll-step": 0
     },
