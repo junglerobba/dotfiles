@@ -14,7 +14,6 @@ set $email $term -e "aerc"
 set $irc $term -e "irssi"
 set $music $term -e "cmus"
 set $browser firefox-developer-edition
-set $rofi wofi -s ~/.config/wofi/materia-dark.css
 
 ### Output configuration
 
@@ -60,9 +59,9 @@ bindsym $mod+Shift+g exec steam
 
 bindsym $mod+Shift+q kill
 
-bindsym $mod+d exec $rofi -S drun
-bindsym $mod+x exec $rofi -S run
-bindsym $mod+g exec steam_dmenu -d "$rofi -d -k /dev/null"
+bindsym $mod+d exec wofi -S drun
+bindsym $mod+x exec wofi -S run -k /dev/null
+bindsym $mod+g exec steam_dmenu -d "wofi -d -k /dev/null"
 
 floating_modifier $mod normal
 
