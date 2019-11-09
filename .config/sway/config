@@ -60,12 +60,13 @@ bindsym $mod+Shift+g exec steam
 bindsym $mod+Shift+q kill
 
 bindsym $mod+d exec wofi -S drun
-bindsym $mod+x exec wofi -S run -k /dev/null
+bindsym $mod+x exec wofi -S run
 bindsym $mod+g exec steam_dmenu -d "wofi -d -k /dev/null"
 
 floating_modifier $mod normal
 
 bindsym $mod+Alt+l exec screenlock
+bindsym $mod+Alt+p exec powermenu "wofi -d -k /dev/null"
 
 # Media keys
 bindsym --locked XF86AudioLowerVolume exec pamixer -d 1

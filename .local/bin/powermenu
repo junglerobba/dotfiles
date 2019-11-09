@@ -1,0 +1,20 @@
+#!/bin/bash
+
+DMENU=$1
+
+if [[ $XDG_CURRENT_DESKTOP == "sway" ]]; then
+	SOCKET=swaymsg
+else
+	SOCKET=i3-msg
+fi
+
+RET=$(echo -e "reload\nexit\nshutdown\nreboot\nsuspend\ncancel" | $DMENU -p "Power")
+
+case $RET in
+	reload) $SOCKET reload ;;
+	exit) $SOCKET exit ;;
+	shutdown) systemctl poweroff ;;
+	reboot) systemctl reboot ;;
+	suspend) systemctl suspend ;;
+	*) ;;
+esac
