@@ -66,7 +66,7 @@ cpu_temperature 1 {
 }
 
 volume master {
-        format = ""
+        format = " %volume"
         format_muted = ""
         device = "default"
 }
