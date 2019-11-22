@@ -2,7 +2,7 @@
     "layer": "top",
     "modules-left": ["sway/workspaces"],
     "modules-center": [],
-    "modules-right": [ "sway/mode", "tray", "pulseaudio", "clock"],
+    "modules-right": [ "sway/mode", "pulseaudio", "clock", "tray"],
     "clock": {
         "interval": 1,
         "format": "{:%a %Y-%m-%d %H:%M:%S}"
@@ -32,10 +32,5 @@
     "sway/workspaces": {
         "disable-scroll-wraparound": true,
         "enable-bar-scroll": true
-    },
-    "sway/window": {
-        "format": "{}",
-        "max-length": 80,
-        "tooltip": false
     }
 }
