@@ -1,65 +1,63 @@
 * {
-    border: none;
-    border-radius: 0;
-    font-family: DejaVu Sans Mono, Helvetica, Arial, sans-serif;
-    font-size: 10pt;
-    min-height: 0;
+	border: none;
+	border-radius: 0;
+	font-family: DejaVu Sans Mono, Helvetica, Arial, sans-serif;
+	font-size: 10pt;
+	min-height: 0;
 }
 
 window#waybar {
-    background: #1a1a1a;
-    color: #efefef;
-    transition-property: background, background-color;
-    transition-duration: .5s;
+	background: #1a1a1a;
+	color: #efefef;
+	transition-property: background, background-color;
+	transition-duration: .5s;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button {
-    padding: 2px 5px 4px 5px;
-    color: #efefef;
-    background: transparent;
-    border-top: 2px solid transparent;
+	padding: 2px 5px 4px 5px;
+	color: #efefef;
+	background: transparent;
+	border-top: 2px solid transparent;
 }
 
 #workspaces button:hover {
-  border-top: 2px solid rgba(255, 255, 255, 0.15);
+	border-top: 2px solid rgba(255, 255, 255, 0.15);
 }
 
 #workspaces button.visible {
-    color: #efefef;
-    background: rgba(255, 255, 255, 0.15);
+	color: #efefef;
+	background: rgba(255, 255, 255, 0.15);
 }
 
 #workspaces button.focused {
-    color: #efefef;
-    border-top: 2px solid white;
-    background: rgba(255, 255, 255, 0.15);
+	color: #efefef;
+	border-top: 2px solid white;
+	background: rgba(255, 255, 255, 0.15);
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b;
-    color: #efefef;
+	background-color: #eb4d4b;
+	color: #efefef;
 }
 
 #clock, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #custom-media, #tray, #mode, #idle_inhibitor {
-    padding: 3px 7px;
-    color: #d0d0d0;
+	padding: 1px 5px;
+	margin: 2px 5px;
+	color: #d0d0d0;
+}
+
+#tray {
+	padding: 1px 5px 1px 1px;
+	margin: 2px 5px 2px 2px;
 }
 
 #pulseaudio.muted {
-    color: #ffff00;
+	color: #1a1a1a;
+	background-color: #ffff00;
 }
 
 #mode {
-    color: #eb4d4b;
-    padding: 0 7px;
-}
-
-#window {
-    padding: 0 14px;
-}
-
-.playing {
-    color: #9ec600;
-    padding: 3px 7px;
+	color: #1a1a1a;
+	background-color: #eb4d4b;
 }
