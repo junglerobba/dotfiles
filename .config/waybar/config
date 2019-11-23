@@ -2,7 +2,7 @@
     "layer": "top",
     "modules-left": ["sway/workspaces"],
     "modules-center": [],
-    "modules-right": [ "sway/mode", "pulseaudio", "clock", "tray"],
+    "modules-right": [ "sway/mode", "custom/ncspot", "pulseaudio", "clock", "tray"],
     "clock": {
         "interval": 1,
         "format": "{:%a %Y-%m-%d %H:%M:%S}"
@@ -32,5 +32,12 @@
     "sway/workspaces": {
         "disable-scroll-wraparound": true,
         "enable-bar-scroll": true
-    }
+    },
+	"custom/ncspot": {
+		"interval": 1,
+		"return-type": "json",
+		"exec": "~/.config/waybar/modules/ncspot.sh",
+		"exec-if": "pgrep ncspot",
+		"escape": true
+	}
 }
