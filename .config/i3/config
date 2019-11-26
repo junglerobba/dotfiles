@@ -13,7 +13,7 @@ bindsym $mod+Shift+i exec discord
 bindsym $mod+o exec $term -e htop
 bindsym $mod+Shift+o exec gnome-system-monitor
 bindsym $mod+p exec $term -e pulsemixer
-bindsym $mod+Shift+p exec $term -e cmus
+bindsym $mod+Shift+p exec $term -e ncspot
 bindsym $mod+Shift+g exec steam
 
 bindsym $mod+Shift+q kill
@@ -165,7 +165,7 @@ hide_edge_borders smart
 font pango:dejavu sans mono 10
 
 bar {
-	status_command  i3status
+	status_command  i3status | ~/.local/bin/i3spotifystatus
 	position top
 	tray_output primary
 	tray_padding 5

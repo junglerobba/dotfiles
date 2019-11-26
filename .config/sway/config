@@ -12,7 +12,7 @@ set $mixer $term -e "pulsemixer"
 set $monitor $term -e "htop"
 set $email $term -e "aerc"
 set $irc $term -e "irssi"
-set $music $term -e "cmus"
+set $music $term -e "ncspot"
 set $browser firefox-developer-edition
 
 ### Output configuration
