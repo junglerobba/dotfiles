@@ -11,7 +11,7 @@ set $files $term -e "ranger"
 set $mixer $term -e "pulsemixer"
 set $monitor $term -e "htop"
 set $email $term -e "aerc"
-set $irc $term -e "irssi"
+set $irc $term -e "weechat"
 set $music $term -e "ncspot"
 set $browser firefox-developer-edition
 

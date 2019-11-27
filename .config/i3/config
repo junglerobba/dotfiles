@@ -8,7 +8,7 @@ bindsym $mod+t exec $term -e ranger
 bindsym $mod+Shift+t exec nautilus
 bindsym $mod+y exec $browser
 bindsym $mod+u exec $term -e aerc
-bindsym $mod+i exec $term -e irssi
+bindsym $mod+i exec $term -e weechat
 bindsym $mod+Shift+i exec discord
 bindsym $mod+o exec $term -e htop
 bindsym $mod+Shift+o exec gnome-system-monitor
