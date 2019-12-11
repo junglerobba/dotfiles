@@ -2,7 +2,7 @@
     "layer": "top",
     "modules-left": ["sway/workspaces"],
     "modules-center": [],
-    "modules-right": [ "sway/mode", "custom/ncspot", "pulseaudio", "clock", "tray"],
+    "modules-right": [ "sway/mode", "custom/spotify", "custom/ncspot", "pulseaudio", "clock", "tray"],
     "clock": {
         "interval": 1,
         "format": "{:%a %Y-%m-%d %H:%M:%S}"
@@ -33,6 +33,13 @@
         "disable-scroll-wraparound": true,
         "enable-bar-scroll": true
     },
+	"custom/spotify": {
+		"interval": 1,
+		"return-type": "json",
+		"exec": "~/.config/waybar/modules/spotify.sh",
+		"exec-if": "pgrep spotify",
+		"escape": true
+	},
 	"custom/ncspot": {
 		"interval": 1,
 		"return-type": "json",

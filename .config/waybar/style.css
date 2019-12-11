@@ -41,7 +41,7 @@ window#waybar {
 	color: #efefef;
 }
 
-#clock, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #custom-ncspot, #tray, #mode, #idle_inhibitor {
+#clock, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #custom-spotify, #custom-ncspot, #tray, #mode, #idle_inhibitor {
 	padding: 1px 5px;
 	margin: 2px 5px;
 	color: #d0d0d0;
@@ -55,6 +55,11 @@ window#waybar {
 #pulseaudio.muted {
 	color: #1a1a1a;
 	background-color: #ffff00;
+}
+
+#custom-spotify {
+	color: #1a1a1a;
+	background-color: #8bcc66;
 }
 
 #custom-ncspot {
