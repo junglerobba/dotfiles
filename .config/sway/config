@@ -6,7 +6,7 @@ set $down j
 set $up k
 set $right l
 
-set $term termite
+set $term alacritty
 set $files $term -e "ranger"
 set $mixer $term -e "pulsemixer"
 set $monitor $term -e "htop"
