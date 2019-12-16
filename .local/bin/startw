@@ -17,6 +17,7 @@ if [ "$1" == "sway" ]; then
 	export QT_WAYLAND_DISABLE_WINDOWDECORATION="1" 
 	COMPOSITOR=$1
 elif [ "$1" != "" ] && [ -x "$(command -v $1)" ]; then
+	gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,maximize,close'
 	export XDG_CURRENT_DESKTOP=$1
 	COMPOSITOR=$1
 fi
