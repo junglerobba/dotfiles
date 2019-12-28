@@ -191,11 +191,11 @@ c.fonts.web.family.fixed = 'dejavu sans mono'
 
 # Font family for serif fonts.
 # Type: FontFamily
-c.fonts.web.family.serif = 'roboto'
+c.fonts.web.family.serif = 'noto serif'
 
 # Font family for sans-serif fonts.
 # Type: FontFamily
-c.fonts.web.family.sans_serif = 'noto sans'
+c.fonts.web.family.sans_serif = 'roboto'
 
 # Font family for cursive fonts.
 # Type: FontFamily
