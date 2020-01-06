@@ -98,8 +98,8 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 bindsym $mod+period focus output right
 bindsym $mod+comma focus output left
 
-bindsym $mod+Shift+period move container to output right
-bindsym $mod+Shift+comma move container to output left
+bindsym $mod+Shift+period move container to output right; focus output right
+bindsym $mod+Shift+comma move container to output left; focus output left
 bindsym $mod+Ctrl+period move workspace to output right
 bindsym $mod+Ctrl+comma move workspace to output left
 
