@@ -165,6 +165,7 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+s sticky toggle
 
 bindsym $mod+a focus parent
+bindsym $mod+c focus child
 
 # Scratchpad:
 
