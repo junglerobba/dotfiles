@@ -1,0 +1,9 @@
+[user]
+	email = tobias.langendorf@gmail.com
+	name = Tobias Langendorf
+[commit]
+	verbose = true
+[pull]
+	rebase = true
+[url "git@github.com:"]
+	insteadOf = https://github.com/

@@ -1,7 +1,0 @@
-[user]
-	email = tobias.langendorf@googlemail.com
-	name = Tobias Langendorf
-[commit]
-	verbose = true
-[pull]
-	rebase = true
