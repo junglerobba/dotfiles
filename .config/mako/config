@@ -3,13 +3,14 @@ background-color=#1a1a1a
 text-color=#efefef
 border-size=1
 border-color=#efefef
-
-output=
 layer=overlay
-default-timeout=5000
-
 height=400
 margin=10,11
 padding=5,5
 
-format=<b>%s</b>\n%b
+[hidden]
+format=(and %h more)
+text-color=#777777
+
+[app-name="Spotify"]
+default-timeout=5000
