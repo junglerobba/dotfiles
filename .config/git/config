@@ -1,6 +1,7 @@
 [user]
 	email = tobias.langendorf@gmail.com
 	name = Tobias Langendorf
+	signingkey = 16099774FB51ECEF
 [commit]
 	verbose = true
 [pull]

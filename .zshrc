@@ -41,3 +41,4 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # Variables
 export EDITOR=vim
+export GPG_TTY=$(tty)
