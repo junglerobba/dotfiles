@@ -7,6 +7,7 @@ set $up k
 set $right l
 
 set $term alacritty
+set $dmenu "wofi -d -k /dev/null"
 set $files $term -e "ranger"
 set $mixer $term -e "pulsemixer"
 set $monitor $term -e "htop"
@@ -64,12 +65,12 @@ bindsym $mod+Shift+q kill
 
 bindsym $mod+d exec wofi -S drun
 bindsym $mod+x exec wofi -S run
-bindsym $mod+g exec steam_dmenu -d "wofi -d -k /dev/null"
+bindsym $mod+g exec steam_dmenu -d $dmenu
 
 floating_modifier $mod normal
 
 bindsym $mod+Alt+l exec screenlock
-bindsym $mod+Alt+p exec powermenu "wofi -d -k /dev/null"
+bindsym $mod+Alt+p exec powermenu $dmenu
 
 # Media keys
 bindsym --locked XF86AudioLowerVolume exec pamixer -d 1
