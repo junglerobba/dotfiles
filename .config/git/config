@@ -1,7 +1,7 @@
 [user]
-	email = tobias.langendorf@gmail.com
+	email = junglerobba@jngl.one
 	name = Tobias Langendorf
-	signingkey = 16099774FB51ECEF
+	signingkey = 063BB04D11363703
 [commit]
 	verbose = true
 [pull]
