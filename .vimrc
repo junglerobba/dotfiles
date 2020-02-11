@@ -13,6 +13,9 @@ set noexpandtab
 syntax on
 filetype plugin on
 
+set mouse=a
+set ttymouse=sgr
+
 set incsearch
 set showmatch
 set hlsearch
