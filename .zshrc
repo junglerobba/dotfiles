@@ -42,3 +42,9 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # Variables
 export EDITOR=vim
 export GPG_TTY=$(tty)
+
+# Source device specific config if available
+ZSH_CONFIG=$HOME/.config/zsh/$(hostname)
+if [[ -e $ZSH_CONFIG ]]; then
+	source $ZSH_CONFIG
+fi
