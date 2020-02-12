@@ -1,9 +1,16 @@
 # Plugins
-ZSH_PLUGIN_DIR=$HOME/.local/share/zsh/plugins
 # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/shrink-path/shrink-path.plugin.zsh
-source $ZSH_PLUGIN_DIR/shrink-path.plugin.zsh
 # https://github.com/zsh-users/zsh-autosuggestions
-source $ZSH_PLUGIN_DIR/zsh-autosuggestions/zsh-autosuggestions.zsh
+ZSH_PLUGIN_DIR=$HOME/.local/share/zsh/plugins
+ZSH_PLUGINS=(
+	"shrink-path.plugin.zsh"
+	"zsh-autosuggestions/zsh-autosuggestions.zsh"
+	)
+for PLUGIN in "${ZSH_PLUGINS[@]}"; do
+	if [[ -e "${ZSH_PLUGIN_DIR}/${PLUGIN}" ]]; then
+		source "${ZSH_PLUGIN_DIR}/${PLUGIN}"
+	fi
+done
 
 # History
 HISTFILE=$HOME/.cache/zsh_history
@@ -32,7 +39,11 @@ precmd() { vcs_info }
 zstyle ':vcs_info:git:*' formats '[%b]'
 
 RPROMPT='${vcs_info_msg_0_}'
-PS1='$(shrink_path -l -t) > '
+if [[ "$(command -v shrink_path)" ]]; then
+	PS1='$(shrink_path -l -t) > '
+else
+	PS1="%2~ > "
+fi
 
 # Alias
 alias l='ls -lFh --color=auto'
