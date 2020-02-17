@@ -1,38 +1,67 @@
 {
-    "layer": "top",
-    "modules-left": ["sway/workspaces"],
-    "modules-center": [],
-    "modules-right": [ "sway/mode", "custom/spotify", "custom/ncspot", "pulseaudio", "clock", "tray"],
-    "clock": {
-        "interval": 1,
-        "format": "{:%a %Y-%m-%d %H:%M:%S}"
-    },
-    "pulseaudio": {
-        "format": "{icon} {volume}%",
-        "format-bluetooth": "{icon} {volume}%",
-        "format-bluetooth-muted": "",
-        "format-muted": "",
-        "format-icons": {
-            "headphones": "",
-            "handsfree": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", ""]
-        },
-        "on-click": "pamixer -t",
-        "on-click-right": "pavucontrol",
-        "scroll-step": 0
-    },
-    "tray": {
-        "icon-size": 15,
-        "spacing": 10
-    },
-    "sway/workspaces": {
-        "disable-scroll-wraparound": true,
-        "enable-bar-scroll": true
-    },
+	"layer": "top",
+	"modules-left": [
+		"sway/workspaces"
+	],
+	"modules-center": [],
+	"modules-right": [
+		"sway/mode",
+		"custom/spotify",
+		"custom/ncspot",
+		"pulseaudio",
+		"battery",
+		"clock",
+		"tray"
+	],
+	"clock": {
+		"interval": 1,
+		"format": "{:%a %Y-%m-%d %H:%M:%S}"
+	},
+	"pulseaudio": {
+		"format": "{icon} {volume}%",
+		"format-bluetooth": "{icon} {volume}%",
+		"format-bluetooth-muted": "",
+		"format-muted": "",
+		"format-icons": {
+			"headphones": "",
+			"handsfree": "",
+			"headset": "",
+			"phone": "",
+			"portable": "",
+			"car": "",
+			"default": [
+				"",
+				""
+			]
+		},
+		"on-click": "pamixer -t",
+		"on-click-right": "pavucontrol",
+		"scroll-step": 0
+	},
+	"tray": {
+		"icon-size": 15,
+		"spacing": 10
+	},
+	"sway/workspaces": {
+		"disable-scroll-wraparound": true,
+		"enable-bar-scroll": true
+	},
+	"battery": {
+		"states": {
+			"warning": 30,
+			"critical": 15
+		},
+		"format": "{icon} {capacity}%",
+		"format-charging": " {capacity}%",
+		"format-icons": [
+			"",
+			"",
+			"",
+			"",
+			""
+		],
+		"max-length": 25
+	},
 	"custom/spotify": {
 		"interval": 1,
 		"return-type": "json",
