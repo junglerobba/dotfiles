@@ -142,8 +142,6 @@ bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
-exec --no-startup-id xrandr --output DisplayPort-1 --mode 1920x1080 --pos 2560x0 --rotate normal --output DisplayPort-0 --primary --mode 2560x1440 --pos 0x0 --rotate normal --output HDMI-A-1 --off --output HDMI-A-0 --off
-
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 exec --no-startup-id dunst
 exec --no-startup-id feh --bg-fill ~/Pictures/wallpaper
@@ -177,9 +175,6 @@ bar {
 }
 
 assign [class="discord"] $ws10
-workspace $ws10 output DisplayPort-1
-
 for_window [class="Spotify"] move to workspace $ws9
-workspace $ws9 output DisplayPort-1
 
 for_window [title="Calculator"] floating enable
