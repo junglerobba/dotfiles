@@ -1,6 +1,7 @@
 {
 	"modules-left": [
-		"sway/workspaces"
+		"sway/workspaces",
+		"sway/window"
 	],
 	"modules-center": [],
 	"modules-right": [
@@ -38,6 +39,10 @@
 	"sway/workspaces": {
 		"disable-scroll-wraparound": true,
 		"enable-bar-scroll": true
+	},
+	"sway/window": {
+		"format": "{}",
+		"max-length": 50
 	},
 	"battery": {
 		"states": {

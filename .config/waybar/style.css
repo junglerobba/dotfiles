@@ -41,7 +41,7 @@ window#waybar {
 	color: #efefef;
 }
 
-#clock, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #custom-spotify, #custom-ncspot, #tray, #mode, #idle_inhibitor {
+#clock, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #custom-spotify, #custom-ncspot, #tray, #window, #mode, #idle_inhibitor {
 	padding: 1px 5px;
 	margin: 2px 5px;
 	color: #d0d0d0;
