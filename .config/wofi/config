@@ -1,5 +1,12 @@
 insensitive=true
 no_actions=true
 
-key_forward=Control_L-n
-key_backward=Control_L-p
+prompt=
+term=alacritty
+
+location=top
+orientation=horizontal
+halign=start
+height=20
+width=100%
+hide_scroll=true
