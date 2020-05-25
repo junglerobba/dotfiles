@@ -1,0 +1,21 @@
+#!/bin/sh
+
+ACTION=$1
+DMENU=$2
+
+PLAYERS=$(playerctl -l)
+
+if [ $(wc -l <<< "${PLAYERS}") -lt 2 ]; then
+	playerctl "${ACTION}"
+	exit 0
+fi
+
+for PLAYER in $PLAYERS
+do
+	if [ "$(playerctl -p ${PLAYER} status)" == "Playing" ]; then
+		exec playerctl -p ${PLAYER} ${ACTION}
+	fi
+done
+
+RET=$(echo -e "${PLAYERS}" | $DMENU -p "${ACTION}")
+[[ ! -z "$RET" ]] && exec playerctl -p ${RET} ${ACTION}
