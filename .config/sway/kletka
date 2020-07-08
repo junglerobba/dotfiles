@@ -18,3 +18,4 @@ workspace 9 output $monitor-2
 
 exec steam -silent
 
+exec redshift -O 4000K
