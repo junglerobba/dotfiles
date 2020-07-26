@@ -4,7 +4,6 @@ unlet! skip_defaults_vim
 source $VIMRUNTIME/defaults.vim
 
 set number
-set relativenumber
 set wrap
 set tabstop=4
 set shiftwidth=4
