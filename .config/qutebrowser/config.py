@@ -22,11 +22,9 @@ c.aliases = {'q': 'close', 'qa': 'quit', 'w': 'session-save', 'wq': 'quit --save
 c.session.default_name = None
 
 c.content.autoplay = False
-c.content.windowed_fullscreen = True
 
 c.scrolling.smooth = True
 
-c.statusbar.hide = False
 c.tabs.last_close = 'close'
 
 c.tabs.padding = {'bottom': 5, 'left': 5, 'right': 5, 'top': 3}
