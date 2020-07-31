@@ -5,6 +5,7 @@ prompt=
 term=alacritty
 
 location=top
+layer=overlay
 orientation=horizontal
 halign=start
 height=20
