@@ -40,8 +40,8 @@ seat * xcursor_theme Adwaita 24
 
 input type:keyboard {
 	xkb_numlock enabled
-	xkb_layout us,us(intl)
-	xkb_options grp:alt_shift_toggle,caps:escape
+	xkb_layout us
+	xkb_options grp:alt_shift_toggle,caps:escape,compose:ralt
 }
 
 ### Key bindings
