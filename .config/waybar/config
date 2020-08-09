@@ -7,7 +7,6 @@
 	"modules-right": [
 		"sway/mode",
 		"custom/spotify",
-		"custom/ncspot",
 		"pulseaudio",
 		"battery",
 		"clock",
@@ -61,17 +60,10 @@
 		"max-length": 25
 	},
 	"custom/spotify": {
-		"interval": 1,
+		"interval": 10,
 		"return-type": "json",
 		"exec": "~/.config/waybar/modules/spotify.sh",
 		"exec-if": "pgrep spotify",
-		"escape": true
-	},
-	"custom/ncspot": {
-		"interval": 1,
-		"return-type": "json",
-		"exec": "~/.config/waybar/modules/ncspot.sh",
-		"exec-if": "pgrep ncspot",
 		"escape": true
 	}
 }
