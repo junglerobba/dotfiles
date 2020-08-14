@@ -209,12 +209,6 @@ mode passthrough {
 }
 bindsym $mod+Pause mode passthrough
 
-### Bar
-
-bar {
-	swaybar_command waybar
-}
-
 ### Styling
 
 default_border pixel 2
