@@ -238,7 +238,6 @@ exec_always {
 exec mako
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 exec /usr/lib/gsd-xsettings
-exec /usr/lib/xdg-desktop-portal -r
 
 include ~/.config/sway/config.d/*
 include ~/.config/sway/`hostname`
