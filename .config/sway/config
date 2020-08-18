@@ -78,9 +78,9 @@ bindsym --locked XF86AudioLowerVolume exec pamixer -d 1
 bindsym --locked XF86AudioRaiseVolume exec pamixer -i 1
 bindsym --locked XF86AudioMute exec pamixer -t
 
-bindsym --locked XF86AudioPlay exec playerctl-select play-pause $dmenu
-bindsym --locked XF86AudioNext exec playerctl-select next $dmenu
-bindsym --locked XF86AudioPrev exec playerctl-select previous $dmenu
+bindsym --locked XF86AudioPlay exec playerctl play-pause
+bindsym --locked XF86AudioNext exec playerctl next
+bindsym --locked XF86AudioPrev exec playerctl previous
 
 # Brightness control
 bindsym XF86MonBrightnessDown exec light -U 10
