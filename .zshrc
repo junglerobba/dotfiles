@@ -49,9 +49,10 @@ fi
 alias l='ls -lFh --color=auto'
 alias la='ls -lAFh --color=auto'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias vim=nvim
 
 # Variables
-export EDITOR=vim
+export EDITOR=nvim
 export GPG_TTY=$(tty)
 export MAKEFLAGS="-j$(nproc)"
 
