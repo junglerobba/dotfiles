@@ -15,3 +15,8 @@ colors:
             odd:
                 bg: '#285577'
                 fg: '#ffffff'
+    hints:
+        bg: '#efefef'
+        fg: '#3c3c3c'
+        match:
+            fg: 'red'

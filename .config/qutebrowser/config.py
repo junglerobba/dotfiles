@@ -37,6 +37,10 @@ c.tabs.wrap = False
 config.bind('<Ctrl+Shift+j>', 'tab-move +')
 config.bind('<Ctrl+Shift+k>', 'tab-move -')
 
+c.hints.auto_follow_timeout = 500
+c.hints.mode = 'word'
+c.hints.uppercase = True
+
 c.url.searchengines = {'DEFAULT': 'https://google.com/search?q={}', 'ddg': 'https://duckduckgo.com/?q={}'}
 c.url.start_pages = 'about:blank'
 
