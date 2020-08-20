@@ -11,8 +11,8 @@ fi
 RET=$(echo -e "reload\nexit\nshutdown\nreboot\nsuspend\ncancel" | $DMENU -p "Power")
 
 case $RET in
-	reload) $SOCKET reload ;;
-	exit) $SOCKET exit ;;
+	reload) systemctl --user restart sway-session.target && $SOCKET reload ;;
+	exit) systemctl --user stop sway-session.target && $SOCKET exit ;;
 	shutdown) systemctl poweroff ;;
 	reboot) systemctl reboot ;;
 	suspend) systemctl suspend ;;
