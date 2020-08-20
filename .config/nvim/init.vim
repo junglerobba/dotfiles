@@ -1,4 +1,4 @@
-source /usr/share/nvim/sysinit.vim
+source /usr/share/nvim/*.vim
 
 set number
 set wrap
