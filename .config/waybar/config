@@ -17,17 +17,19 @@
 		"format": "{:%a %Y-%m-%d %H:%M:%S}"
 	},
 	"pulseaudio": {
-		"format": "{icon} {volume}%",
-		"format-bluetooth": "{icon} {volume}%",
-		"format-bluetooth-muted": "",
-		"format-muted": "",
+		"format-source": "",
+		"format-source-muted": "",
+		"format": "{icon}{format_source} {volume}%",
+		"format-bluetooth": "{icon}{format_source} {volume}%",
+		"format-bluetooth-muted": "{format_source}",
+		"format-muted": "{format_source}",
 		"format-icons": {
 			"default": [
 				"",
 				""
 			]
 		},
-		"on-click": "pamixer -t",
+		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
 		"on-click-right": "gnome-control-center sound",
 		"scroll-step": 0
 	},
