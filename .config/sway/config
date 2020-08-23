@@ -11,9 +11,6 @@ set $dmenu "wofi -d -k /dev/null"
 set $files $term -e "ranger"
 set $mixer $term -e "pulsemixer"
 set $monitor $term -e "htop"
-set $email $term -e "aerc"
-set $irc $term -e "weechat"
-set $music $term -e "ncspot"
 set $browser firefox-developer-edition
 
 ### Input configuration
@@ -53,9 +50,6 @@ bindsym $mod+Return exec $term
 bindsym $mod+t exec $files
 bindsym $mod+Shift+t exec nautilus
 bindsym $mod+y exec $browser
-bindsym $mod+u exec $email
-bindsym $mod+i exec $irc
-bindsym $mod+Shift+i exec discord
 bindsym $mod+o exec $monitor
 bindsym $mod+Shift+o exec gnome-system-monitor
 bindsym $mod+p exec $mixer
@@ -66,7 +60,6 @@ bindsym $mod+Shift+q kill
 
 bindsym $mod+d exec wofi -S drun
 bindsym $mod+x exec dmenu_path | "$dmenu" | xargs swaymsg exec --
-bindsym $mod+g exec steam_dmenu -d $dmenu
 
 floating_modifier $mod normal
 
