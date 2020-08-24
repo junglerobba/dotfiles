@@ -1,6 +1,7 @@
 {
 	"modules-left": [
 		"sway/workspaces",
+		"idle_inhibitor",
 		"sway/window"
 	],
 	"modules-center": [],
@@ -12,6 +13,13 @@
 		"clock",
 		"tray"
 	],
+	"idle_inhibitor": {
+		"format": "{icon}",
+		"format-icons": {
+			"activated": "",
+			"deactivated": ""
+		}
+	},
 	"clock": {
 		"interval": 1,
 		"format": "{:%a %Y-%m-%d %H:%M:%S}"

@@ -47,6 +47,12 @@ window#waybar {
 	color: #d0d0d0;
 }
 
+#idle_inhibitor {
+	padding: 1px 0px 1px 5px;
+	margin: 2px 0px 2px 5px;
+	color: #d0d0d0;
+}
+
 #tray {
 	padding: 1px 5px 1px 1px;
 	margin: 2px 5px 2px 2px;
