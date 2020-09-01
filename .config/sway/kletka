@@ -3,17 +3,23 @@
 set $monitor-1 'Acer Technologies VG270U P 0x0000F67D'
 set $monitor-2 'Acer Technologies Acer XF270H 0x000071CF'
 
-output $monitor-1 resolution 2560x1440 position 0,0
-output $monitor-2 resolution 1920x1080 position 2560,0
+output $monitor-1 {
+	position 0,0
+	adaptive_sync enabled
+}
+output $monitor-2 {
+	position 2560,0
+}
 
-output $monitor-1 adaptive_sync enabled
+output HDMI-A-1 {
+	mode 3840x2160@60Hz scale 2.0
+	disable
+}
 
-output HDMI-A-1 mode 3840x2160@60Hz scale 2.0
-output HDMI-A-1 disable
-
-output * max_render_time 1
-
-output * bg ~/Pictures/wallpaper fill
+output * {
+	max_render_time 1
+	bg ~/Pictures/wallpaper fill
+}
 
 workspace 1 output $monitor-1
 workspace 10 output $monitor-2

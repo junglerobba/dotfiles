@@ -32,8 +32,10 @@ input type:touchpad {
 
 focus_follows_mouse always
 
-seat * hide_cursor 60000
-seat * xcursor_theme Adwaita 24
+seat * {
+	hide_cursor 60000
+	xcursor_theme Adwaita 24
+}
 
 input type:keyboard {
 	xkb_numlock enabled
