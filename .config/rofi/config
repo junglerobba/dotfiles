@@ -1,3 +1,0 @@
-rofi.modi: drun,window,run
-rofi.theme: dmenu
-rofi.drun-display-format: {name}

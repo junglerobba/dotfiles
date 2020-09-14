@@ -2,18 +2,14 @@
 
 DMENU=$1
 
-if [[ $XDG_CURRENT_DESKTOP == "sway" ]]; then
-	SOCKET=swaymsg
-else
-	SOCKET=i3-msg
-fi
+SOCKET=swaymsg
 
-RET=$(echo -e "reload\nexit\nshutdown\nreboot\nsuspend\ncancel" | $DMENU -p "Power")
+RET=$(echo -e "reload\nexit\npoweroff\nreboot\nsuspend\ncancel" | $DMENU -p "Power")
 
 case $RET in
 	reload) systemctl --user restart sway-session.target && $SOCKET reload ;;
 	exit) systemctl --user stop sway-session.target && $SOCKET exit ;;
-	shutdown) systemctl poweroff ;;
+	poweroff) systemctl poweroff ;;
 	reboot) systemctl reboot ;;
 	suspend) systemctl suspend ;;
 	*) ;;
