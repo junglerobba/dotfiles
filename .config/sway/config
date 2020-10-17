@@ -7,11 +7,12 @@ set $up k
 set $right l
 
 set $term alacritty
-set $dmenu "wofi -d -k /dev/null"
+set $dmenu "bemenu"
 set $files $term -e "ranger"
 set $mixer $term -e "pulsemixer"
 set $monitor $term -e "htop"
 set $browser firefox-developer-edition
+
 
 ### Input configuration
 
@@ -61,8 +62,7 @@ bindsym $mod+Shift+g exec steam
 
 bindsym $mod+Shift+q kill
 
-bindsym $mod+d exec wofi -S drun
-bindsym $mod+x exec dmenu_path | "$dmenu" | xargs swaymsg exec --
+bindsym $mod+d exec dmenu_path | "$dmenu" | xargs swaymsg exec --
 
 floating_modifier $mod normal
 
