@@ -145,8 +145,14 @@ bindsym $mod+Tab workspace back_and_forth
 
 # Window rules
 
-for_window [class=".*"] inhibit_idle fullscreen
-for_window [app_id=".*"] inhibit_idle fullscreen
+for_window [class=".*"] {
+	inhibit_idle fullscreen
+	max_render_time 1
+}
+for_window [app_id=".*"] {
+	inhibit_idle fullscreen
+	max_render_time 1
+}
 
 for_window [app_id="firefox" title="Picture-in-Picture"] floating enable, sticky enable, border none
 for_window [class="steam"] fullscreen disable
