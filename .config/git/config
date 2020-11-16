@@ -2,6 +2,12 @@
 	email = junglerobba@jngl.one
 	name = Tobias Langendorf
 	signingkey = 063BB04D11363703
+[sendemail]
+	smtpencryption = tls
+	smtpserver = smtp.migadu.com
+	smtpuser = junglerobba@jngl.one
+	smtpserverport = 587
+	annotate = yes
 [commit]
 	verbose = true
 [pull]
