@@ -11,6 +11,7 @@ set $dmenu "wofi -d -i -k /dev/null"
 set $files $term -e "ranger"
 set $mixer $term -e "pulsemixer"
 set $monitor $term -e "htop"
+set $mail $term -e "aerc"
 set $browser firefox-developer-edition
 
 set $font dejavu sans mono
@@ -56,6 +57,7 @@ bindsym $mod+t exec $files
 bindsym $mod+Shift+t exec nautilus
 bindsym $mod+y exec $browser
 bindsym $mod+o exec $monitor
+bindsym $mod+u exec $mail
 bindsym $mod+Shift+o exec gnome-system-monitor
 bindsym $mod+p exec $mixer
 bindsym $mod+Shift+p exec $music
