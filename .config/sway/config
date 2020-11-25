@@ -12,7 +12,7 @@ set $files $term -e "ranger"
 set $mixer $term -e "pulsemixer"
 set $monitor $term -e "htop"
 set $mail $term -e "aerc"
-set $browser firefox-developer-edition
+set $browser xdg-open https://www.archlinux.org
 
 set $font dejavu sans mono
 
