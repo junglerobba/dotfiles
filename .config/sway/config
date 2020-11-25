@@ -7,7 +7,7 @@ set $up k
 set $right l
 
 set $term alacritty
-set $dmenu "bemenu"
+set $dmenu "wofi -d -i -k /dev/null"
 set $files $term -e "ranger"
 set $mixer $term -e "pulsemixer"
 set $monitor $term -e "htop"
@@ -63,7 +63,8 @@ bindsym $mod+Shift+g exec steam
 
 bindsym $mod+Shift+q kill
 
-bindsym $mod+d exec dmenu_path | "$dmenu" | xargs swaymsg exec --
+bindsym $mod+d exec wofi -S drun
+bindsym $mod+Shift+d exec dmenu_path | "$dmenu" | xargs swaymsg exec --
 
 floating_modifier $mod normal
 
