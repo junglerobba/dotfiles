@@ -66,7 +66,7 @@ bindsym $mod+Shift+g exec steam
 bindsym $mod+Shift+q kill
 
 bindsym $mod+d exec wofi -S drun
-bindsym $mod+Shift+d exec dmenu_path | "$dmenu" | xargs swaymsg exec --
+bindsym $mod+x exec dmenu_path | "$dmenu" | xargs swaymsg exec --
 
 floating_modifier $mod normal
 
