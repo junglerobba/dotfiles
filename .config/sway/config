@@ -159,6 +159,7 @@ for_window [app_id=".*"] {
 }
 
 for_window [app_id="firefox" title="Picture-in-Picture"] floating enable, sticky enable, border none
+for_window [app_id="qjackctl" title="^JACK.*\. — QjackCtl$"] floating enable
 for_window [class="steam"] fullscreen disable
 for_window [title="Calculator"] floating enable
 for_window [class="Spotify"] move workspace 9
