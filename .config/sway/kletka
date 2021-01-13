@@ -1,7 +1,7 @@
 ### Output configuration
 
-set $monitor-1 'Acer Technologies VG270U P 0x0000F67D'
-set $monitor-2 'Acer Technologies Acer XF270H 0x000071CF'
+set $monitor-1 'Acer Technologies VG270U P 0x00007B76'
+set $monitor-2 'Acer Technologies VG270U P 0x0000F67D'
 
 output $monitor-1 {
 	position 0,0
@@ -9,6 +9,7 @@ output $monitor-1 {
 }
 output $monitor-2 {
 	position 2560,0
+	adaptive_sync enabled
 }
 
 output HDMI-A-1 {
