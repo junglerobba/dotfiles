@@ -246,6 +246,22 @@ exec_always {
 	gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:close'
 }
 
+### Bar
+
+bar {
+	status_command i3status-rs
+	position top
+	font pango:jetbrains mono, Font Awesome 5 Free 10
+	separator_symbol ""
+	tray_output *
+	tray_padding 4
+
+	workspace_min_width 25
+	colors {
+		background #1a1a1a
+	}
+}
+
 ### Autostart
 
 exec swayidle -w \
