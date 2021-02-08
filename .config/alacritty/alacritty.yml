@@ -5,7 +5,7 @@ window:
 
 font:
     normal:
-        family: Source Code Pro
+        family: Jetbrains Mono
     size: 10.0
     offset:
         y: 4
