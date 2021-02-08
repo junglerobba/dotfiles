@@ -26,6 +26,12 @@ workspace 1 output $monitor-1
 workspace 10 output $monitor-2
 workspace 9 output $monitor-2
 
+### Input
+
+input type:touchpad {
+	events disabled
+}
+
 ### Keybindings
 
 bindsym $mod+g exec steam_dmenu -d $dmenu
