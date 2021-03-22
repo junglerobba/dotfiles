@@ -19,7 +19,6 @@ output HDMI-A-1 {
 
 output * {
 	max_render_time 1
-	bg ~/Pictures/wallpaper fill
 }
 
 workspace 1 output $monitor-1
