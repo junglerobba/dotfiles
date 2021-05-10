@@ -7,7 +7,7 @@ info_fg = "#1a1a1a"
 idle_bg = "#1a1a1a"
 
 [icons]
-name = "awesome5"
+name = "awesome"
 
 [[block]]
 block = "music"
@@ -15,8 +15,7 @@ buttons = ["play"]
 max_width = 50
 dynamic_width = true
 hide_when_empty = true
-marquee = false
-format = "{artist} / {title}"
+format = " {artist} / {title} "
 
 [[block]]
 block = "sound"
