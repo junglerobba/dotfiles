@@ -6,12 +6,12 @@ set $down j
 set $up k
 set $right l
 
-set $term alacritty
+set $term footclient
 set $dmenu "wofi -d -i -k /dev/null"
-set $files $term -e "ranger"
-set $mixer $term -e "pulsemixer"
-set $monitor $term -e "htop"
-set $mail $term -e "aerc"
+set $files $term -- "ranger"
+set $mixer $term -- "pulsemixer"
+set $monitor $term -- "htop"
+set $mail $term -- "aerc"
 set $browser xdg-open https://www.archlinux.org
 
 set $font dejavu sans mono
@@ -273,6 +273,7 @@ exec swayidle -w \
 exec mako
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 exec /usr/lib/gsd-xsettings
+exec foot --server
 
 include /etc/sway/config.d/*
 include ~/.config/sway/config.d/*
