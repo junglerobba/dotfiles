@@ -2,13 +2,7 @@
 
 export XDG_CURRENT_DESKTOP=sway
 
-export MOZ_ENABLE_WAYLAND=1
-
 export QT_WAYLAND_DISABLE_WINDOWDECORATION="1"
 export QT_STYLE_OVERRIDE=adwaita-dark
-
-export _JAVA_OPTIONS='-Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Djdk.gtk.version=3 -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
-export _JAVA_AWT_WM_NONREPARENTING=1
-export BEMENU_OPTS="-m -1 -i -p '' --fn 'dejavu sans mono 10' -H 26 --hb #285577 --hf #efefef --tf #ffffff --ff #ffffff"
 
 exec /usr/bin/sway "$@"
