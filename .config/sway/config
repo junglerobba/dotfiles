@@ -158,6 +158,7 @@ for_window [app_id=".*"] {
 	max_render_time 1
 }
 
+for_window [app_id="firefox"] move workspace 7
 for_window [app_id="firefox" title="Picture-in-Picture"] floating enable, sticky enable, border none
 for_window [app_id="firefox" title="Sharing Indicator"] kill
 for_window [app_id="qjackctl" title="^JACK.*\. — QjackCtl$"] floating enable
