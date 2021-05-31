@@ -7,7 +7,9 @@ info_fg = "#1a1a1a"
 idle_bg = "#1a1a1a"
 
 [icons]
-name = "awesome"
+name = "awesome5"
+[icons.overrides]
+bat_not_available = ""
 
 [[block]]
 block = "music"
