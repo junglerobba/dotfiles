@@ -61,7 +61,7 @@ bindsym $mod+u exec $mail
 bindsym $mod+Shift+o exec gnome-system-monitor
 bindsym $mod+p exec $mixer
 bindsym $mod+Shift+p exec $music
-bindsym $mod+Shift+g exec steam
+bindsym $mod+Shift+g exec xdg-open steam://open/library
 
 bindsym $mod+Shift+q kill
 
