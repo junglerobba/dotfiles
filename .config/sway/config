@@ -234,13 +234,6 @@ focus_on_window_activation urgent
 
 font pango:$font 10
 
-# GTK Stuff
-
-exec {
-	gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
-	gsettings set org.gnome.desktop.interface font-name 'Roboto 10'
-}
-
 ### Bar
 
 bar {
