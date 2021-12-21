@@ -259,8 +259,8 @@ exec swayidle -w \
 	before-sleep 'swaylock -f'
 
 exec mako
-exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-exec /usr/lib/gsd-xsettings
+exec /usr/libexec/polkit-gnome-authentication-agent-1 &
+exec /usr/libexec/gsd-xsettings
 exec foot --server
 
 include /etc/sway/config.d/*
