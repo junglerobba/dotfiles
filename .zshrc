@@ -24,6 +24,9 @@ setopt HIST_FIND_NO_DUPS
 
 setopt autocd
 bindkey -e
+bindkey  "^[[H"   beginning-of-line
+bindkey  "^[[F"   end-of-line
+bindkey  "^[[3~"  delete-char
 
 autoload -Uz compinit
 compinit
