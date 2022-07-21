@@ -8,7 +8,7 @@ RET=$(echo -e "reload\nexit\npoweroff\nreboot\nsuspend\ncancel" | $DMENU -p "Pow
 
 case $RET in
 	reload) systemctl --user restart sway-session.target && $SOCKET reload ;;
-	exit) systemctl --user stop sway-session.target && $SOCKET exit ;;
+	exit) swaymsg "output * adaptive_sync off" && systemctl --user stop sway-session.target && $SOCKET exit ;;
 	poweroff) systemctl poweroff ;;
 	reboot) systemctl reboot ;;
 	suspend) systemctl suspend ;;
