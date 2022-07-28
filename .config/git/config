@@ -18,3 +18,5 @@
 	ignore = update-index --assume-unchanged
 	unignore = update-index --no-assume-unchanged
 	ignored = !git ls-files -v | grep "^[[:lower:]]"
+	autoremove = !git branch --merged main | grep -v \"^\\* main\" | xargs -n 1 -r git branch -d
+	autoremove-master = !git branch --merged master | grep -v \"^\\* master\" | xargs -n 1 -r git branch -d
