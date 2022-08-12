@@ -48,6 +48,11 @@ else
 	PS1="%2~ > "
 fi
 
+if [ -f /run/.containerenv ] \
+	&& [ -f /run/.toolboxenv ]; then
+	PS1="[%F{magenta}⬢%F{default} %m ] $PS1"
+fi
+
 # Alias
 alias l='ls -lFh --color=auto'
 alias la='ls -lAFh --color=auto'
