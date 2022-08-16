@@ -1,7 +1,0 @@
-export ANDROID_HOME=$HOME/Android/Sdk
-
-# Add node_modules to PATH if opened in project dir
-# (mostly useful for shells openend inside IDEs)
-if [[ -e ./package.json  ]]; then
-	PATH=$(pwd)/node_modules/.bin:$PATH
-fi
