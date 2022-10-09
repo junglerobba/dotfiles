@@ -38,7 +38,6 @@ setopt PROMPT_SUBST
 
 # Prompt
 autoload -Uz vcs_info
-precmd() { vcs_info }
 zstyle ':vcs_info:git:*' formats '[%b]'
 
 RPROMPT='${vcs_info_msg_0_}'
@@ -52,6 +51,23 @@ if [ -f /run/.containerenv ] \
 	&& [ -f /run/.toolboxenv ]; then
 	PS1="[%F{magenta}⬢%F{default} %m ] $PS1"
 fi
+
+# Title
+precmd() {
+	vcs_info
+	if [[ "$(command -v shrink_path)" ]]; then
+		print -Pn "\e]2;$(shrink_path -l -t)\a"
+	else
+		print -Pn "\e]2;%~\a"
+	fi
+}
+preexec() {
+	if [[ "$(command -v shrink_path)" ]]; then
+		print -Pn "\e]1;$1\a" ; print -Pn "\e]2;$1 - $(shrink_path -l -t)\a"
+	else
+		print -Pn "\e]1;$1\a" ; print -Pn "\e]2;$1\a"
+	fi
+}
 
 # Alias
 alias l='ls -lFh --color=auto'
