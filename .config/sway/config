@@ -194,8 +194,8 @@ bindsym $mod+minus scratchpad show
 
 # Notifications:
 
-bindsym $mod+n exec makoctl invoke
-bindsym $mod+Shift+n exec makoctl dismiss
+bindsym $mod+n exec swaync-client -t -sw
+bindsym $mod+Shift+n exec swaync-client --hide-latest
 
 # Modes:
 
@@ -258,7 +258,7 @@ exec swayidle -w \
 		resume 'swaymsg "output * dpms on"' \
 	before-sleep 'swaylock -f'
 
-exec mako
+exec swaync
 exec /usr/libexec/kf5/polkit-kde-authentication-agent-1
 exec /usr/libexec/gsd-xsettings
 

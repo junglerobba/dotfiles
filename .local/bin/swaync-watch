@@ -1,0 +1,7 @@
+#!/bin/zsh
+
+swaync-client -swb | jq -c -r -M --unbuffered ".text" |
+while read ln
+do
+	printf '%s\n' "$ln" > "$XDG_RUNTIME_DIR"/notifications
+done

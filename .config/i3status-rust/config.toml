@@ -39,6 +39,13 @@ allow_missing = true
 hide_missing = true
 
 [[block]]
+block = "custom"
+command = "echo  `cat $XDG_RUNTIME_DIR/notifications`"
+interval = "once"
+watch_files = ["$XDG_RUNTIME_DIR/notifications"]
+on_click = "swaync-client -t -sw"
+
+[[block]]
 block = "time"
 format = "%a %F %T"
 interval = 1

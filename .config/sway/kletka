@@ -38,3 +38,4 @@ bindsym $mod+g exec steam_dmenu -d $dmenu
 ### Autostart
 
 exec steam -silent
+exec swaync-watch
