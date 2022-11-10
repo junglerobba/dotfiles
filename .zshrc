@@ -12,6 +12,8 @@ for PLUGIN in "${ZSH_PLUGINS[@]}"; do
 	fi
 done
 
+fpath+=~/.local/share/zsh/completions
+
 # History
 HISTFILE=$HOME/.cache/zsh_history
 SAVEHIST=1000

@@ -39,3 +39,5 @@ bindsym $mod+g exec steam_dmenu -d $dmenu
 
 exec steam -silent
 exec swaync-watch
+exec foot --server
+exec gnome-software --gapplication-service

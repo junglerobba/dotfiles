@@ -35,7 +35,6 @@ step_width = 0
 block = "battery"
 interval = 10
 format = "{percentage}% {time}"
-allow_missing = true
 hide_missing = true
 
 [[block]]
@@ -47,5 +46,6 @@ on_click = "swaync-client -t -sw"
 
 [[block]]
 block = "time"
+on_click = "org.gnome.Calendar"
 format = "%a %F %T"
 interval = 1
